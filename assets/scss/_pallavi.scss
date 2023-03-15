@@ -1,9 +1,29 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  signin start  ]@@@@@@@@@@@@@@@@@@@@@@
-[data-page-name=signin] {
+[data-page-name=index] {
     @include media-breakpoint(basic) {
-        
+        & .mainInner {
+            display: none;
+            & .bodybg{
+                background-color: $theme1;
+                & .imgparent{
+                    & img{
+                        width: 104px;
+                        height: 104px;
+                    }
+                }
+                & .text{
+                    font-family: 'Bruno Ace';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 50px;
+                    line-height: 60px;
+                    text-transform: uppercase;
+                    margin-top: 13px;                    
+                }
+            }
+        }
     }
-
+    
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
     @include media-breakpoint-up(sm) {}
 
@@ -26,7 +46,293 @@
 
     @include media-breakpoint-down(sm) {}
 }
+[data-page-name=login] {
 
+    @include media-breakpoint(basic) {
+        & .mainInner {
+            & .paddingclass{
+                padding: 18px;
+                & .mainheading{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 30px;
+                    text-align: center;
+                    margin-bottom: 19px;
+                    color: $theme3;
+                }
+                & .subheading{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-align: center;     
+                    margin-bottom: 55px;  
+                    color: $theme3;
+                }
+                & .btnhead{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 25px;
+                    margin-bottom: 19px;
+                    color: $theme3;
+                }
+                & .selfanchor{
+                    width: 100% !important;
+                    height: 46px !important;
+                    display: block;
+                    border: 1px solid;
+                    border-radius: 2px;
+                    margin-bottom: 32px !important;
+                    &.active{
+                        background-color: $theme1;
+                    }
+                    & span{
+                        color: $theme3;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 46px;
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $theme3;
+                    }
+                }
+                & .bottomtxt{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-align: center;
+                    margin-top: 37px;
+                    color: $theme3;
+                    & .signanchor{
+    
+                    }
+                }
+            }
+        }
+    }
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name=loginself] {
+
+    @include media-breakpoint(basic) {
+        & .mainInner {
+            & .header{
+                padding: 21px 14px;
+                & .leftimgcontainer{
+                    & img{
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+            & .paddingclass{
+                padding: 18px;
+                & .mainheading{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 28px;
+                    color: $theme3;
+                    margin-bottom: 8px;
+                }
+                & .subheading{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 23px;
+                    color: $theme3;
+                    margin-bottom: 40px;
+                }
+                & .require{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 19px;
+                    color: $theme3;
+                    margin-bottom: 11px;
+                }
+                & .inpcontainer{
+                    margin-bottom: 29px;
+                    & .inp{
+                        width: 100%;
+                        height: 46px;
+                        color: $gray-500;
+                        border-radius: 2px;
+                        border: 1px solid $theme1;
+                        padding-left: 20px;
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+                & .selfanchor{
+                    width: 100% !important;
+                    height: 46px !important;
+                    display: block;
+                    border: 1px solid;
+                    border-radius: 2px;
+                    &.active{
+                        background-color: $theme1;
+                    }
+                    & span{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: $theme3;
+                        line-height: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 46px !important;
+                    }
+                }
+            }
+        }
+    }
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name=otp] {
+
+    @include media-breakpoint(basic) {
+        & .mainInner {
+            & .header{
+                padding: 21px 14px;
+                & .leftimgcontainer{
+                    & img{
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+            & .paddingclass{
+                padding: 18px;
+                & .mainheading{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 23px;
+                    text-align: center;
+                    color: $theme3;
+                    padding-left:46px ;
+                    padding-right:55px ;
+                    padding-bottom: 22px;
+                }
+                & .inpcontainer{
+                    & .boxpadding{
+                        padding-left: 42px;
+                        padding-right: 45px;
+                        & .boxinp{
+                            width: 10px;
+                            height: 23px;
+                            border: 1px solid $theme1;
+                        }
+                    }
+                }
+                & .selfanchor{
+                    width: 100% !important;
+                    height: 46px !important;
+                    display: block;
+                    border: 1px solid;
+                    border-radius: 2px;
+                    &.active{
+                        background-color: $theme1;
+                    }
+                    & span{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: $theme3;
+                        line-height: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 46px !important;
+                    }
+                }
+            }
+        }
+    }
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
 [data-bs-theme=dark] {
     & [data-page-name=signin] {
         @include dark-media-breakpoint(basic) {
