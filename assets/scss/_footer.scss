@@ -1,6 +1,32 @@
 @include media-breakpoint(basic) {
-  .centerTopPart {
-    
+  .footer {
+    padding: 15px 18px;
+    border-color: lighten($theme1, 31) !important;
+    background-color: lighten($theme1, 45.8);
+    & .footerMenu {
+      & .menuList {
+        & .item {
+          & .links {
+            &.active {
+            }
+            & .iconOuter{
+              width: 24px;
+              height: 24px;
+              & img {
+              }
+            }
+            & .linkTxt {
+              font-family: 'Outfit';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 15px;
+              color: lighten($black, 12);
+            }
+          }
+        }
+      }
+    }
   }
 }
 
