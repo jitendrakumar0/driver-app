@@ -1,7 +1,11 @@
-// ? @@@@@@@@@@@@@@@@@@@@@@[  signin start  ]@@@@@@@@@@@@@@@@@@@@@@
-[data-page-name=signin] {
+// ? @@@@@@@@@@@@@@@@@@@@@@[  home start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name=homePage] {
     @include media-breakpoint(basic) {
-        
+        &.mainBody {
+            & .contentBody {
+                padding: 0 18px;
+            }
+        }
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -28,7 +32,7 @@
 }
 
 [data-bs-theme=dark] {
-    & [data-page-name=signin] {
+    & [data-page-name=homePage] {
         @include dark-media-breakpoint(basic) {
             
         }
@@ -59,5 +63,5 @@
     }
 }
 
-// ! @@@@@@@@@@@@@@@@@@@@@@[  signin start  ]@@@@@@@@@@@@@@@@@@@@@@
+// ! @@@@@@@@@@@@@@@@@@@@@@[  home start  ]@@@@@@@@@@@@@@@@@@@@@@
 
