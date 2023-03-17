@@ -11,6 +11,6 @@
         color: $gray-200;
     }
     &:focus-visible {
-        border-color: lighten($theme1, 30);
+        border-color: lighten($theme1, 10);
     }
 }
