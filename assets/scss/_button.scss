@@ -19,6 +19,53 @@
             background-color: transparent;
         }
     }
+    .smallYellowBtn {
+        width: 45px;
+        height: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $theme1;
+        border-radius: 2px;
+        border-radius: 2px;
+        color: lighten($color: $black, $amount: 0.1);
+        margin-left: 23px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+    }
+    .cancelButton {
+        background-color: lighten($color: $danger, $amount: 0.7);
+        border: 2px solid lighten($color: $danger, $amount: 0.7);
+        border-radius: 2px;
+        width: 130px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        &:hover {
+            border: 2px solid lighten($color: $danger, $amount: 0.7);
+            color: lighten($color: $danger, $amount: 0.7);
+            background-color: transparent;
+        }
+    }
+    .startButton {
+        background-color: lighten($color: $green, $amount: 0.7);
+        border-radius: 2px;
+        width: 130px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+
+        &:hover {
+            color: lighten($color: $green, $amount: 0.7);
+            border: 2px solid lighten($color: $green, $amount: 0.7);
+            background-color: transparent;
+        }
+    }
 }
 
 
