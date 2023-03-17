@@ -115,14 +115,36 @@
 // ? ###########################  OTP start #########################
 [data-page-name=otp] {
     @include media-breakpoint(basic) {
-        & .pagePadding {
-            padding: 0px 13px;
-            & .headerAroow {
-                width: 24px;
-                height: 24px;
-                & img {
-                    aspect-ratio: 10/10;
-                    object-fit: cover;
+        & .headerAroow {
+            width: 24px;
+            height: 24px;
+            & img {
+                aspect-ratio: 10/10;
+                object-fit: cover;
+            }
+        }
+
+        & .mainContent {
+            padding: 0px 18px;
+            & .otpHeading {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 23px;
+                text-align: center;
+                color: lighten($black, 7.5);
+                max-width: 259px;
+                width: 100%;
+                margin: auto;
+            }
+            & .otpInput {
+                padding-top: 22px;
+                justify-content: center;
+                display: flex;
+                & .otpInputBox {
+                    & input {
+                        text-align: center;
+                    }
                 }
             }
         }
