@@ -115,7 +115,7 @@
 // ? ###########################  OTP start #########################
 [data-page-name=otp] {
     @include media-breakpoint(basic) {
-        & .headerAroow {
+        & .headerArrow {
             width: 24px;
             height: 24px;
             & img {
