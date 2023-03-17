@@ -115,15 +115,65 @@
 // ? ###########################  OTP start #########################
 [data-page-name=otp] {
     @include media-breakpoint(basic) {
-        & .pagePadding {
-            padding: 0px 13px;
-            & .headerAroow {
-                width: 24px;
-                height: 24px;
-                & img {
-                    aspect-ratio: 10/10;
-                    object-fit: cover;
+        & .headerAroow {
+            width: 24px;
+            height: 24px;
+            & img {
+                aspect-ratio: 10/10;
+                object-fit: cover;
+            }
+        }
+
+        & .mainContent {
+            padding: 100px 18px 0px 18px;
+            & .otpHeading {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 23px;
+                text-align: center;
+                color: lighten($black, 7.5);
+                max-width: 259px;
+                width: 100%;
+                margin: auto;
+            }
+            & .otpInput {
+                padding-top: 22px;
+                max-width: 274px;
+                width: 100%;
+                margin: auto;
+                justify-content: center;
+                // display: flex;
+                & .otpInputBox {
+                    padding: 0px 2px;
+                    & input {
+                        text-align: center;
+                    }
                 }
+                & .timeRemaining {
+                    padding-top: 28px;
+                    & .timeDuration {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: $black(lighten, 0.7);
+    
+                        & span {
+                            color: $theme1;
+                        }
+                    }
+                    & .otpTimeSend {
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: $black(lighten, 0.7);
+                        line-height: 18px;
+                    }
+                }
+            }
+            
+
+            & .formBtn {
+                padding-top: 55px;
             }
         }
     }

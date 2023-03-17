@@ -1,6 +1,24 @@
 
 @include media-breakpoint(basic) {
-    
+    .yellowButton {
+        background-color: $theme1;
+        border: 2px solid $theme1;
+        width: 324px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: lighten($black, 0.7);
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 2px;
+
+        &:hover {
+            color: lighten($black, 20);
+            border: 2px solid $theme1;
+            background-color: transparent;
+        }
+    }
 }
 
 

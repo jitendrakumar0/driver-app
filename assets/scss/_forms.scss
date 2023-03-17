@@ -1,0 +1,16 @@
+.form-control {
+    width: 46px;
+    height: 46px;
+    border: 1px solid lighten($theme1, 30);
+    border-radius: 2px;
+    color: lighten($black, 7.5);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    &::placeholder {
+        color: $gray-200;
+    }
+    &:focus-visible {
+        border-color: lighten($theme1, 10);
+    }
+}
