@@ -7,9 +7,36 @@
     font-weight: 400;
     font-size: 18px;
     &::placeholder {
-        color: $gray-200;
+        color: $gray-500;
     }
     &:focus-visible {
         border-color: lighten($theme1, 10);
+    }
+    &:valid {
+        background-image: none !important;
+    }
+}
+.form-select{
+    box-shadow: none !important;
+    border-color: $theme1 !important;
+    height: 46px !important;
+    border-radius: 2px !important;
+    color: $gray-500 !important;
+    &:valid{
+        background-image: none;
+    }
+    &::after{
+        appearance: none !important;
+        background-image: url(../svg/icons/down.svg);
+        width: 12px;
+        height: 6px;
+    }
+}
+.form-check{
+    & .form-check-input{
+        &:checked{
+            background-color: $theme1 !important;
+            border-color: $theme1 !important;
+        }
     }
 }

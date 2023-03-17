@@ -442,45 +442,329 @@
 
     @include media-breakpoint(basic) {
         & .mainInner {
-            & .header{
-                padding: 21px 14px;
-                & .leftimgcontainer{
-                    & img{
-                        width: 24px;
-                        height: 24px;
-                    }
+            & .headerArrow {
+                width: 24px;
+                height: 24px;
+                & img {
+                    aspect-ratio: 10/10;
+                    object-fit: cover;
                 }
             }
             & .paddingclass{
-                padding: 18px;
-                & .mainheading{
-                    font-family: 'Outfit';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 22px;
-                    line-height: 28px;
-                    margin-bottom: 5px;
+                padding: 0px 18px;
+                & .signupHeading {
+                    padding-top: 13px;
+                    padding-bottom: 34px;
+                    & .mainheading{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 22px;
+                        line-height: 28px;
+                        padding-bottom: 5px;
+                    }
+                    & .subheading{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 23px;
+                    }
                 }
-                & .subheading{
-                    font-family: 'Outfit';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 23px;
-                    padding-bottom: 40px;
-                }
+                
                 & .myform{
-                    & .lbl{
-                        margin-bottom: 12px;
-                    }
-                    & .inp{
-                        box-shadow: none !important;
-                        border-color: $theme1 !important;
-                        padding-left: 15px;
+                    & .marginn{
                         margin-bottom: 24px;
+                        & .lbl{
+                            margin-bottom: 12px;
+                        }
+                        & .inp{
+                            box-shadow: none !important;
+                            border-color: $theme1 !important;
+                            padding-left: 15px;
+                            // margin-bottom: 24px;
+                        }
+                        & .selectclass{
+                            // margin-bottom: 18px;
+                        }
                     }
-                    & .select2-container--default .select2-selection--single{
-                        border-color: $theme1;
+                    & .radios{
+                        margin-bottom:23px;
+                        & .roundlabel {
+                            height: 14px;
+                            width: 14px;
+                            border-radius: 50%;
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            border: 1px solid $theme3;
+                            & span {
+                                height: 6px;
+                                width: 6px;
+                                border-radius: 50%;
+                                display: inline-flex;
+                            }
+                        }
+                        & .radioinp{
+                            width: 14px !important;
+                            height: 14px !important;
+                            border-radius: 50%;
+                            accent-color: $theme1;
+                            &:checked ~ .roundlabel{
+                                border-color: $theme1;
+                                & span{
+                                    background-color: $theme1;
+                                }
+                            }
+                        }
+                        & .radiolbl{
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 20px;
+                            margin-left: 10px;
+                            margin-right: 25px;
+                        }
+                    }
+                    & .selfanchor{
+                        margin-bottom: 35px;
+                    }
+                }
+            }
+        }
+    }
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name= Signupwithselfdriver] {
+
+    @include media-breakpoint(basic) {
+        & .mainInner {
+            & .headerArrow {
+                width: 24px;
+                height: 24px;
+                & img {
+                    aspect-ratio: 10/10;
+                    object-fit: cover;
+                }
+            }
+            & .paddingclass{
+                padding: 0px 18px;
+                & .signupHeading {
+                    padding-top: 13px;
+                    padding-bottom: 34px;
+                    & .mainheading{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 22px;
+                        line-height: 28px;
+                        padding-bottom: 5px;
+                    }
+                    & .subheading{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 23px;
+                    }
+                }
+                
+                & .myform{
+                    & .marginn{
+                        margin-bottom: 24px;
+                        & .lbl{
+                            margin-bottom: 12px;
+                        }
+                        & .inp{
+                            box-shadow: none !important;
+                            border-color: $theme1 !important;
+                            padding-left: 15px;
+                            // margin-bottom: 24px;
+                        }
+                        & .selectclass{
+                            // margin-bottom: 18px;
+                        }
+                    }
+                    & .radios{
+                        margin-bottom:23px;
+                        & .roundlabel {
+                            height: 14px;
+                            width: 14px;
+                            border-radius: 50%;
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            border: 1px solid $theme3;
+                            & span {
+                                height: 6px;
+                                width: 6px;
+                                border-radius: 50%;
+                                display: inline-flex;
+                            }
+                        }
+                        & .radioinp{
+                            width: 14px !important;
+                            height: 14px !important;
+                            border-radius: 50%;
+                            accent-color: $theme1;
+                            &:checked ~ .roundlabel{
+                                border-color: $theme1;
+                                & span{
+                                    background-color: $theme1;
+                                }
+                            }
+                        }
+                        & .radiolbl{
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 20px;
+                            margin-left: 10px;
+                            margin-right: 25px;
+                        }
+                    }
+                    & .selfanchor{
+                        margin-bottom: 35px;
+                    }
+                }
+            }
+        }
+    }
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name= Signupwithactingdriver] {
+
+    @include media-breakpoint(basic) {
+        & .mainInner {
+            & .headerArrow {
+                width: 24px;
+                height: 24px;
+                & img {
+                    aspect-ratio: 10/10;
+                    object-fit: cover;
+                }
+            }
+            & .paddingclass{
+                padding: 0px 18px;
+                & .signupHeading {
+                    padding-top: 13px;
+                    padding-bottom: 34px;
+                    & .mainheading{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 22px;
+                        line-height: 28px;
+                        padding-bottom: 5px;
+                    }
+                    & .subheading{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 23px;
+                    }
+                }
+                
+                & .myform{
+                    & .marginn{
+                        margin-bottom: 24px;
+                        & .lbl{
+                            margin-bottom: 12px;
+                        }
+                        & .inp{
+                            box-shadow: none !important;
+                            border-color: $theme1 !important;
+                            padding-left: 15px;
+                            // margin-bottom: 24px;
+                        }
+                        & .selectclass{
+                            // margin-bottom: 18px;
+                        }
+                    }
+                    & .radios{
+                        margin-bottom:23px;
+                        & .roundlabel {
+                            height: 14px;
+                            width: 14px;
+                            border-radius: 50%;
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            border: 1px solid $theme3;
+                            & span {
+                                height: 6px;
+                                width: 6px;
+                                border-radius: 50%;
+                                display: inline-flex;
+                            }
+                        }
+                        & .radioinp{
+                            width: 14px !important;
+                            height: 14px !important;
+                            border-radius: 50%;
+                            accent-color: $theme1;
+                            &:checked ~ .roundlabel{
+                                border-color: $theme1;
+                                & span{
+                                    background-color: $theme1;
+                                }
+                            }
+                        }
+                        & .radiolbl{
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 20px;
+                            margin-left: 10px;
+                            margin-right: 25px;
+                        }
+                    }
+                    & .selfanchor{
+                        margin-bottom: 35px;
                     }
                 }
             }
