@@ -2,7 +2,6 @@
 [data-page-name=index] {
     @include media-breakpoint(basic) {
         & .mainInner {
-            display: none;
             & .bodybg{
                 background-color: $theme1;
                 & .imgparent{
