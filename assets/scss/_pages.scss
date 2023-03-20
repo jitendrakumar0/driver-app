@@ -32,10 +32,31 @@
     .CalendarType {
         padding-top: 33px;
         & .calendar {
-
-        }
-        & .calendartime {
-            
+            & .calendarDetail {
+                padding: 12px 14px 12px 14px;
+                background-color: lighten($color: $theme1, $amount: 45);
+                border: 1px solid lighten($theme1, 30);
+                width: 100%;
+                display: flex;
+                border-radius: 2px;
+                & .calendarImg {
+                    width: 22px;
+                    height: 22px;
+                    margin-right: 17px;
+                    & img {
+                        aspect-ratio: 10/10;
+                        object-fit: contain;
+                        object-position: center;
+                    }
+                }
+                & .calendarTimeText {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: lighten($color: $black, $amount: 7);
+                }
+            }
         }
     }
 }
