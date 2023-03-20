@@ -108,82 +108,122 @@
     <body>
         <main class="container-fluid vh-100" data-page-name="asenquiry">
             <div class="row mainInner h-100">
-                    <navbar class="col-12 headerr p-0">
-                        <div class="headerbackground d-flex ">
-                            <div class="leftimgcontainer">
-                                <img src="assets/svg/icons/arrowleft.svg" alt="" srcset="">
-                            </div>
-                            <div class="headertxt">
-                                Add new trip 
+                <navbar class="col-12 headerr p-0">
+                    <div class="headerbackground d-flex ">
+                        <div class="leftimgcontainer">
+                            <img src="assets/svg/icons/arrowleft.svg" alt="" srcset="">
+                        </div>
+                        <div class="headertxt">
+                            Add new trip 
+                        </div>
+                    </div>
+                </navbar>
+                <div class="col-12 flex-fill paddingclass" data-page-name="test" data-scrollbar>
+                    <div class="row btnmarginbottom">
+                        <div class="col-6">
+                            <button class="bookingclass"> <span> As Booking</span></button>
+                        </div>
+                        <div class="col-6">
+                            <button class="enquiryclass"> <span> As Booking</span></button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="subheading">
+                                Select your trip type
                             </div>
                         </div>
-                    </navbar>
-                    <div class="col-12 flex-fill paddingclass" data-page-name="test" data-scrollbar>
-                        <div class="row btnmarginbottom">
-                            <div class="col-6">
-                                <button class="bookingclass"> <span> As Booking</span></button>
-                            </div>
-                            <div class="col-6">
-                                <button class="enquiryclass"> <span> As Booking</span></button>
-                            </div>
+                        <div class="col-12">
+                            <div class="radios d-flex flex-nowrap text-nowrap">
+                                <div class="custom-control custom-radio radio1 d-flex align-items-center me-3">
+                                    <input type="radio" class="custom-control-input radioinp d-none"checked id="customRadio" name="example1">
+                                    <label for="customRadio" class="roundlabel"><span></span></label>
+                                    <label class="custom-control-label radiolbl" for="customRadio">Point to Point</label>
+                                </div>    
+                                <div class="custom-control custom-radio radio2 d-flex align-items-center me-3">
+                                    <input type="radio" class="custom-control-input radioinp d-none" id="customRadi" name="example1">
+                                    <label for="customRadi" class="roundlabel"><span></span></label>
+                                    <label class="custom-control-label radiolbl" for="customRadi">Hourly Rentals</label>
+                                </div>  
+                                <div class="custom-control custom-radio radio3 d-flex align-items-center">
+                                    <input type="radio" class="custom-control-input radioinp d-none" id="customRadi" name="example1">
+                                    <label for="customRadii" class="roundlabel"><span></span></label>
+                                    <label class="custom-control-label radiolbl" for="customRadii">Outstations Rentals</label>
+                                </div>  
+                            </div> 
                         </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="subheading">
-                                    Select your trip type
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="radios d-flex flex-nowrap text-nowrap">
-                                    <div class="custom-control custom-radio radio1 d-flex align-items-center me-3">
-                                        <input type="radio" class="custom-control-input radioinp d-none"checked id="customRadio" name="example1">
-                                        <label for="customRadio" class="roundlabel"><span></span></label>
-                                        <label class="custom-control-label radiolbl" for="customRadio">Point to Point</label>
-                                    </div>    
-                                    <div class="custom-control custom-radio radio2 d-flex align-items-center me-3">
-                                        <input type="radio" class="custom-control-input radioinp d-none" id="customRadi" name="example1">
-                                        <label for="customRadi" class="roundlabel"><span></span></label>
-                                        <label class="custom-control-label radiolbl" for="customRadi">Hourly Rentals</label>
-                                    </div>  
-                                    <div class="custom-control custom-radio radio3 d-flex align-items-center">
-                                        <input type="radio" class="custom-control-input radioinp d-none" id="customRadi" name="example1">
-                                        <label for="customRadii" class="roundlabel"><span></span></label>
-                                        <label class="custom-control-label radiolbl" for="customRadii">Outstations Rentals</label>
-                                    </div>  
-                                </div> 
-                            </div>
-                            <div class="col-12">
-                                <div class="selectdate">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <input type="text" class="d-none" id="dateinp">
-                                            <label for="dateinp" class="dateclass">
-                                                <div class="calenderimg">
-                                                    <img src="assets/svg/icons/calanderimg.svg" alt="" srcset="">
-                                                </div>
-                                                <div class="calendertxt">
-                                                    Select date <br>12/07/2022
-                                                </div>
-                                            </label>
-                                        </div>
-                                        <div class="col-6">
-                                            <input type="text" class="d-none" id="dateinp">
-                                            <label for="dateinp" class="dateclass">
-                                                <div class="calenderimg">
-                                                    <img src="assets/svg/icons/clockimg.svg" alt="" srcset="">
-                                                </div>
-                                                <div class="calendertxt">
-                                                    Select Time <br>12:30 am 
-                                                </div>
-                                            </label>
-                                        </div>
+                        <div class="col-12">
+                            <div class="selectdate">
+                                <div class="row">
+                                    <div class="col-6 position-relative">
+                                        <input type="date" class="opacity-0 z-2 position-relative w-100 h-100" id="time">
+                                        <label for="time" class="dateclass position-absolute z-1 top-0">
+                                            <div class="calenderimg">
+                                                <img src="assets/svg/icons/calanderimg.svg" alt="" srcset="">
+                                            </div>
+                                            <div class="calendertxt">
+                                                Select date <br>12/07/2022
+                                            </div>
+                                        </label>
                                     </div>
-                                    </div> 
+                                    <div class="col-6">
+                                        <input type="text" class="d-none" id="dateinp">
+                                        <label for="dateinp" class="dateclass">
+                                            <div class="calenderimg">
+                                                <img src="assets/svg/icons/clockimg.svg" alt="" srcset="">
+                                            </div>
+                                            <div class="calendertxt">
+                                                Select Time <br>12:30 am 
+                                            </div>
+                                        </label>
+                                    </div>
                                 </div>
-                            
+                                </div> 
+                        </div>
+                        <div class="col-12">
+                            <div class="paymentblog">
+                                <div class="subheading">Payment Mode</div>
+                                <select class="form-select selectbox " aria-label="Default select example" required="">
+                                    <option value="" selected="" disabled="">Cash</option>
+                                    <option value="1">Tata Indigo</option>
+                                    <option value="2">Maruthi Suzuki Dezire</option>
+                                    <option value="3">Hyundai Xcent</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="yellowButton" data-bs-toggle="modal" data-bs-target="#exampleModal">Request Trip</button>
+                        </div>
 
-                    <!-- <footer class="col-12 footer">footer</footer> -->
+                
+                
+                    </div>
+                </div>
+                <!-- <footer class="col-12 footer">footer</footer> -->
+
             </div>
+            
+                <!-- modal -->
+                <div class="modal fade modalone" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modaldialog">
+                    <div class="modal-content modalcontent">
+                        <div class="modal-header modalheader">
+                        <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+                        <button type="button" class="btn-close btnclose" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <!-- <div class="closebtncontainer">
+                            <img src="assets/svg/icons/closebtn.svg" alt="" srcset="">
+                        </div> -->
+                        </div>
+                        <div class="modal-body modalbody">
+                        <div class="head">New Trip Enquiry Resuest</div>
+                        <div class="para">Your enquiry request has been
+                            successfully submitted. The travel agents
+                            will inform you about your new trip
+                            shortly.</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
         </main>
         <script src="assets/libs/node_modules/jquery/dist/jquery.min.js"></script>
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

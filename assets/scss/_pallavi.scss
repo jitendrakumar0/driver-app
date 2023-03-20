@@ -1,3 +1,7 @@
+
+
+       
+       
 // ? @@@@@@@@@@@@@@@@@@@@@@[  signin start  ]@@@@@@@@@@@@@@@@@@@@@@
 [data-page-name=index] {
     @include media-breakpoint(basic) {
@@ -1271,8 +1275,8 @@
                     }
                 }
                 & .selectdate{
-                    margin-top: 6px;
-                    margin-bottom: 33px;
+                    margin-top: 36px;
+                    margin-bottom: 20px;
                     & .dateclass{
                         width: 146px;
                         height: 46px;
@@ -1303,9 +1307,52 @@
                         }
                     }
                 }
+                & .paymentblog{
+                    margin-bottom: 49px;
+                }
+                
             }
-        }
     }
+    // & .modalone{
+    //     & .modaldialog{
+    //         & .modalcontent{
+    //             width: 324px;
+    //             margin: auto;
+    //             border-radius:4px ;
+    //             & .modalheader{
+    //                 border-bottom: none !important;
+    //                 & .btn-close{
+    //                     // --bs-btn-close-bg:none;
+    //                     --bs-btn-close-bg: url(../svg/icons/closebtn.svg) !important;
+    //                     --bs-btn-close-opacity:1;
+    //                 }
+    //             }
+    //             & .modalbody{
+    //                 & .head{
+    //                     font-family: 'Outfit';
+    //                     font-style: normal;
+    //                     font-weight: 500;
+    //                     font-size: 18px;
+    //                     line-height: 23px;
+    //                     margin-bottom: 10px;
+    //                     text-align: center;
+    //                     color: $theme3;
+    //                 }
+    //                 & .para{
+    //                     font-family: 'Outfit';
+    //                     font-style: normal;
+    //                     font-weight: 400;
+    //                     font-size: 16px;
+    //                     line-height: 20px;
+    //                     text-align: center;
+    //                     color: $theme3;
+    //                 }
+    //             }
+    //         }  
+    //     }
+    //     }
+    }
+
      // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
         @include media-breakpoint-up(sm) {}
 
@@ -1328,6 +1375,7 @@
     
         @include media-breakpoint-down(sm) {}
 }
+
 [data-bs-theme=dark] {
     & [data-page-name=signin] {
         @include dark-media-breakpoint(basic) {
