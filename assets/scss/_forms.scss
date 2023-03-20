@@ -15,7 +15,16 @@
     &:valid {
         background-image: none !important;
     }
-}
+    &.bginput {
+        background-color: lighten($color: $theme1, $amount: 45);
+    }
+    &.bginput {
+        &:focus {
+            background-color: lighten($color: $theme1, $amount: 45);
+        }
+    }
+}   
+
 .form-select{
     box-shadow: none !important;
     border-color: $theme1 !important;

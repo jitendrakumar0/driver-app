@@ -57,6 +57,18 @@
       }
     }
   }
+
+  .headerNew {
+    padding: 16px 18px;
+    & .headerHeading {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 23px;
+      color: $black;
+      text-align: center;
+    }
+  }
 }
 
 
