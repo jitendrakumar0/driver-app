@@ -1,30 +1,61 @@
 // ? @@@@@@@@@@@@@@@@@@@@@@[  signin start  ]@@@@@@@@@@@@@@@@@@@@@@
-[data-page-name=signin] {
-    @include media-breakpoint(basic) {
-        
+@include media-breakpoint(basic) {
+    .TripFile {
+        & .tripLabel {
+            border: 1px dashed lighten($theme1, 30);
+            background-color: lighten($color: $theme1, $amount: 45);
+            height: 86px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & .fileUploadImg {
+                width: 24px;
+                height: 24px;
+                padding-bottom:5px;
+                & img {
+                    aspect-ratio: 10/10;
+                    object-fit: contain;
+                    object-position: center;
+                }
+            }
+            & .fileUploadText {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                color: lighten($color: $black, $amount: 20);
+
+            }
+        }
     }
+    .CalendarType {
+        padding-top: 33px;
+        & .calendar {
 
-    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
-    @include media-breakpoint-up(sm) {}
-
-    @include media-breakpoint-up(md) {}
-
-    @include media-breakpoint-up(lg) {}
-
-    @include media-breakpoint-up(xl) {}
-
-    @include media-breakpoint-up(xxl) {}
+        }
+        & .calendartime {
+            
+        }
+    }
+}
 
 
-    @include media-breakpoint-down(xxl) {}
-
-    @include media-breakpoint-down(xl) {}
-
-    @include media-breakpoint-down(lg) {}
-
-    @include media-breakpoint-down(md) {}
-
-    @include media-breakpoint-down(sm) {}
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+@include media-breakpoint-up(sm) {
+    
+}
+@include media-breakpoint-up(md) {
+    
+}
+@include media-breakpoint-up(lg) {
+    
+}
+@include media-breakpoint-up(xl) {
+    
+}
+@include media-breakpoint-up(xxl) {
+    
 }
 
 [data-bs-theme=dark] {

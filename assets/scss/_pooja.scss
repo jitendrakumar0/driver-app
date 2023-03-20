@@ -332,7 +332,7 @@
                                 z-index: 2;
                             }
                             & .stepText {
-                                width: 223px;
+                                width: 198px;
                                 font-size: 14px;
                                 font-weight: 400;
                                 margin-left: 15px;
@@ -420,7 +420,7 @@
                                 z-index: 2;
                             }
                             & .stepText {
-                                width: 223px;
+                                width: 198px;
                                 font-size: 14px;
                                 font-weight: 400;
                                 margin-left: 15px;
@@ -509,11 +509,23 @@
                                 z-index: 2;
                             }
                             & .stepText {
-                                width: 223px;
+                                width: 198px;
                                 font-size: 14px;
                                 font-weight: 400;
                                 margin-left: 15px;
                                 color: lighten($color: $black, $amount: 0.7);
+                            }
+                        }
+
+                        & .shareLink {
+                            width: 24px;
+                            height: 24px;
+                            display: flex;
+                            & img {
+                                width: 100%;
+                                height: 100%;
+                                aspect-ratio: 10/10;
+                                object-fit: contain;
                             }
                         }
                     }
@@ -565,4 +577,775 @@
 }
 // ! ###########################  CashBooking End #########################
 
+// ? ###########################  onlineTrip start #########################
+[data-page-name=onlineTrip] {
+    @include media-breakpoint(basic) {
+        & .contentBody {
+            & .bookingHeader {
+                background-color: lighten($theme1, 4);
+                padding: 12px 18px;
+                & .bookingHeaderItem {
+                    padding: 3px 15px 3px 15px;
+                    // display: flex;
+                    border-right: 1px solid lighten($color: $black, $amount:50);
+                    // align-items: center;
+                    &:last-child {
+                        border-right: none ;
+                    }
+                    & .bookingHeaderItemImg {
+                        margin-right: 10px;
+                        width: 26px;
+                        height: 26px;
+                        
+                        & img {
+                            aspect-ratio: 10/10;
+                            object-fit: contain;
+                        }
+                    }
+                    & .bookingHeaderItemtext {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: $black;
+                    }
+                }
+            }
 
+            & .spacePadding {
+                padding: 0px 18px;
+                & .BookingItem {
+                    padding-top: 25px;
+                    padding-bottom: 38px;
+                    & .BookingItemHeading {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 23px;
+                        padding-bottom: 15px;
+                        color: lighten($color: $black, $amount: 0.1);
+                    }   
+                    & .bookingItems {
+                        border: 1px solid lighten($theme1, 30);
+                        border-radius: 2px;
+                        background-color: lighten($color: $theme1, $amount: 45);
+                        width: 93px;
+                        height: 60px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 19px;
+                        color: $black;
+                        text-transform: capitalize;
+                        &.active {
+                        background-color: lighten($color: $black, $amount: 0.1);
+                        color: $white;
+                        }
+                    }
+                }
+                & .bookingItemsdetailsNew {
+                    background-color: lighten($color: $theme2, $amount: 45);
+                    padding: 20px;
+                    border-radius: 2px;
+                    & .timeSchedule {
+                        & .timeScheduletext {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: lighten($color: $black, $amount: 0.7);
+                        }
+                        & .timescheduleType {
+                            padding-left: 24px;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 15px;
+                            line-height: 19px;
+                            color: $black;
+                        }
+                    }
+                    & .steps {
+                        padding-top: 25px;
+                        padding-bottom: 32px;
+                        border-bottom: 2px dashed $black;
+                        & .stepsborder {
+                            position: relative;
+                            padding-bottom: 25px;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                border: 1px dashed $black;
+                                height: 100%;
+                                left: 18px;
+                                top: 8px;
+                                z-index: 1;
+                                
+                            }
+                            &:last-child {
+                                padding-bottom: 0px;
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                            & .stepRound1 {
+                                width: 14px;
+                                height: 14px;
+                                background-color: lighten($color: $green, $amount: 0.3);
+                                border-radius: 50px;
+                                z-index: 2;
+                            }
+                            & .stepRound2 {
+                                width: 14px;
+                                height: 14px;
+                                background-color: lighten($color: $red, $amount: 0.3);
+                                border-radius: 50px;
+                                z-index: 2;
+                            }
+                            & .stepText {
+                                width: 198px;
+                                font-size: 14px;
+                                font-weight: 400;
+                                margin-left: 15px;
+                                color: lighten($color: $black, $amount: 0.7);
+                            }
+                        }
+                    }
+                    & .tripDetails {
+                        padding-top: 17px;
+                        padding-bottom: 22px;
+                        & .tripHeading {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: lighten($color: $black, $amount: 0.7);
+                            padding-bottom: 6px;
+                        }
+                        & .triptext {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: $black;
+                        }
+                    }
+                }
+                & .bookingItemsdetailsOngoing {
+                    margin-top: 38px;
+                    background-color: lighten($color: $red, $amount: 41);
+                    padding: 20px 10px 20px 20px;
+                    border-radius: 2px;
+                    & .timeSchedule {
+                        & .timeScheduletext {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: lighten($color: $black, $amount: 0.7);
+                        }
+                        & .timescheduleType {
+                            padding-left: 24px;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 15px;
+                            line-height: 19px;
+                            color: $black;
+                        }
+                    }
+                    & .steps {
+                        padding-top: 25px;
+                        padding-bottom: 32px;
+                        border-bottom: 2px dashed $black;
+                        & .stepsborder {
+                            position: relative;
+                            padding-bottom: 25px;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                border: 1px dashed $black;
+                                height: 100%;
+                                left: 18px;
+                                top: 8px;
+                                z-index: 1;
+                                
+                            }
+                            &:last-child {
+                                padding-bottom: 0px;
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                            & .stepRound1 {
+                                width: 14px;
+                                height: 14px;
+                                background-color: lighten($color: $green, $amount: 0.3);
+                                border-radius: 50px;
+                                z-index: 2;
+                            }
+                            & .stepRound2 {
+                                width: 14px;
+                                height: 14px;
+                                background-color: lighten($color: $red, $amount: 0.3);
+                                border-radius: 50px;
+                                z-index: 2;
+                            }
+                            & .stepText {
+                                width: 198px;
+                                font-size: 14px;
+                                font-weight: 400;
+                                margin-left: 15px;
+                                color: lighten($color: $black, $amount: 0.7);
+                            }
+                        }
+                    }
+                    & .tripDetails {
+                        padding-top: 17px;
+                        padding-bottom: 22px;
+                        & .tripHeading {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: lighten($color: $black, $amount: 0.7);
+                            padding-bottom: 6px;
+                        }
+                        & .triptext {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: $black;
+                        }
+                    }
+                }
+                & .bookingItemsdetailsUpcoming {
+                    background-color: lighten($color: $theme2, $amount: 45);
+                    padding: 20px 10px 20px 20px;
+                    margin-bottom: 24px;
+                    margin-top: 38px;
+                    border-radius: 2px;
+                    & .timeSchedule {
+                        & .timeScheduletext {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: lighten($color: $black, $amount: 0.7);
+                        }
+                        & .timescheduleType {
+                            padding-left: 24px;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 15px;
+                            line-height: 19px;
+                            color: $black;
+                        }
+                    }
+                    & .steps {
+                        padding-top: 25px;
+                        padding-bottom: 32px;
+                        border-bottom: 2px dashed $black;
+                        & .stepsborder {
+                            position: relative;
+                            padding-bottom: 25px;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                border: 1px dashed $black;
+                                height: 100%;
+                                left: 18px;
+                                top: 8px;
+                                z-index: 1;
+                                
+                            }
+                            &:last-child {
+                                padding-bottom: 0px;
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                            & .stepRound1 {
+                                width: 14px;
+                                height: 14px;
+                                background-color: lighten($color: $green, $amount: 0.3);
+                                border-radius: 50px;
+                                z-index: 2;
+                            }
+                            & .stepRound2 {
+                                width: 14px;
+                                height: 14px;
+                                background-color: lighten($color: $red, $amount: 0.3);
+                                border-radius: 50px;
+                                z-index: 2;
+                            }
+                            & .stepText {
+                                width: 198px;
+                                font-size: 14px;
+                                font-weight: 400;
+                                margin-left: 15px;
+                                color: lighten($color: $black, $amount: 0.7);
+                            }
+                        }
+
+                        & .shareLink {
+                            width: 24px;
+                            height: 24px;
+                            display: flex;
+                            & img {
+                                width: 100%;
+                                height: 100%;
+                                aspect-ratio: 10/10;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                    & .tripDetails {
+                        padding-top: 17px;
+                        padding-bottom: 22px;
+                        & .tripHeading {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: lighten($color: $black, $amount: 0.7);
+                            padding-bottom: 6px;
+                        }
+                        & .triptext {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: $black;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {}
+
+    @include media-breakpoint-down(xl) {}
+
+    @include media-breakpoint-down(lg) {}
+
+    @include media-breakpoint-down(md) {}
+
+    @include media-breakpoint-down(sm) {}
+}
+// ! ###########################  onlineTrip End #########################
+
+// ? ########################### signatureTrip start #########################
+[data-page-name=signatureTrip] {
+    @include media-breakpoint(basic) {
+        & .contentBody {
+            & .bookingHeader {
+                background-color: lighten($theme1, 4);
+                padding: 12px 18px;
+                & .bookingHeaderItem {
+                    padding: 3px 15px 3px 15px;
+                    // display: flex;
+                    border-right: 1px solid lighten($color: $black, $amount:50);
+                    // align-items: center;
+                    &:last-child {
+                        border-right: none ;
+                    }
+                    & .bookingHeaderItemImg {
+                        margin-right: 10px;
+                        width: 26px;
+                        height: 26px;
+                        
+                        & img {
+                            aspect-ratio: 10/10;
+                            object-fit: contain;
+                        }
+                    }
+                    & .bookingHeaderItemtext {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: $black;
+                    }
+                }
+            }
+
+            & .spacePadding {
+                padding: 0px 18px;
+                & .BookingItem {
+                    padding-top: 25px;
+                    padding-bottom: 38px;
+                    & .BookingItemHeading {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 23px;
+                        padding-bottom: 15px;
+                        color: lighten($color: $black, $amount: 0.1);
+                    }   
+                    & .bookingItems {
+                        border: 1px solid lighten($theme1, 30);
+                        border-radius: 2px;
+                        background-color: lighten($color: $theme1, $amount: 45);
+                        width: 93px;
+                        height: 60px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 19px;
+                        color: $black;
+                        text-transform: capitalize;
+                        &.active {
+                        background-color: lighten($color: $black, $amount: 0.1);
+                        color: $white;
+                        }
+                    }
+                }
+                & .bookingItemsdetailsNew {
+                    background-color: lighten($color: $theme2, $amount: 45);
+                    padding: 20px;
+                    border-radius: 2px;
+                    & .timeSchedule {
+                        & .timeScheduletext {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: lighten($color: $black, $amount: 0.7);
+                        }
+                        & .timescheduleType {
+                            padding-left: 24px;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 15px;
+                            line-height: 19px;
+                            color: $black;
+                        }
+                    }
+                    & .steps {
+                        padding-top: 25px;
+                        padding-bottom: 32px;
+                        border-bottom: 2px dashed $black;
+                        & .stepsborder {
+                            position: relative;
+                            padding-bottom: 25px;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                border: 1px dashed $black;
+                                height: 100%;
+                                left: 18px;
+                                top: 8px;
+                                z-index: 1;
+                                
+                            }
+                            &:last-child {
+                                padding-bottom: 0px;
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                            & .stepRound1 {
+                                width: 14px;
+                                height: 14px;
+                                background-color: lighten($color: $green, $amount: 0.3);
+                                border-radius: 50px;
+                                z-index: 2;
+                            }
+                            & .stepRound2 {
+                                width: 14px;
+                                height: 14px;
+                                background-color: lighten($color: $red, $amount: 0.3);
+                                border-radius: 50px;
+                                z-index: 2;
+                            }
+                            & .stepText {
+                                width: 198px;
+                                font-size: 14px;
+                                font-weight: 400;
+                                margin-left: 15px;
+                                color: lighten($color: $black, $amount: 0.7);
+                            }
+                        }
+                    }
+                    & .tripDetails {
+                        padding-top: 17px;
+                        padding-bottom: 22px;
+                        & .tripHeading {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: lighten($color: $black, $amount: 0.7);
+                            padding-bottom: 6px;
+                        }
+                        & .triptext {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: $black;
+                        }
+                    }
+                }
+                & .bookingItemsdetailsOngoing {
+                    margin-top: 38px;
+                    background-color: lighten($color: $red, $amount: 41);
+                    padding: 20px 10px 20px 20px;
+                    border-radius: 2px;
+                    & .timeSchedule {
+                        & .timeScheduletext {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: lighten($color: $black, $amount: 0.7);
+                        }
+                        & .timescheduleType {
+                            padding-left: 24px;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 15px;
+                            line-height: 19px;
+                            color: $black;
+                        }
+                    }
+                    & .steps {
+                        padding-top: 25px;
+                        padding-bottom: 32px;
+                        border-bottom: 2px dashed $black;
+                        & .stepsborder {
+                            position: relative;
+                            padding-bottom: 25px;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                border: 1px dashed $black;
+                                height: 100%;
+                                left: 18px;
+                                top: 8px;
+                                z-index: 1;
+                                
+                            }
+                            &:last-child {
+                                padding-bottom: 0px;
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                            & .stepRound1 {
+                                width: 14px;
+                                height: 14px;
+                                background-color: lighten($color: $green, $amount: 0.3);
+                                border-radius: 50px;
+                                z-index: 2;
+                            }
+                            & .stepRound2 {
+                                width: 14px;
+                                height: 14px;
+                                background-color: lighten($color: $red, $amount: 0.3);
+                                border-radius: 50px;
+                                z-index: 2;
+                            }
+                            & .stepText {
+                                width: 198px;
+                                font-size: 14px;
+                                font-weight: 400;
+                                margin-left: 15px;
+                                color: lighten($color: $black, $amount: 0.7);
+                            }
+                        }
+                    }
+                    & .tripDetails {
+                        padding-top: 17px;
+                        padding-bottom: 22px;
+                        & .tripHeading {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: lighten($color: $black, $amount: 0.7);
+                            padding-bottom: 6px;
+                        }
+                        & .triptext {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: $black;
+                        }
+                    }
+                }
+                & .bookingItemsdetailsUpcoming {
+                    background-color: lighten($color: $theme2, $amount: 45);
+                    padding: 20px 10px 20px 20px;
+                    margin-bottom: 24px;
+                    margin-top: 38px;
+                    border-radius: 2px;
+                    & .timeSchedule {
+                        & .timeScheduletext {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: lighten($color: $black, $amount: 0.7);
+                        }
+                        & .timescheduleType {
+                            padding-left: 24px;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 15px;
+                            line-height: 19px;
+                            color: $black;
+                        }
+                    }
+                    & .steps {
+                        padding-top: 25px;
+                        padding-bottom: 32px;
+                        border-bottom: 2px dashed $black;
+                        & .stepsborder {
+                            position: relative;
+                            padding-bottom: 25px;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                border: 1px dashed $black;
+                                height: 100%;
+                                left: 18px;
+                                top: 8px;
+                                z-index: 1;
+                                
+                            }
+                            &:last-child {
+                                padding-bottom: 0px;
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                            & .stepRound1 {
+                                width: 14px;
+                                height: 14px;
+                                background-color: lighten($color: $green, $amount: 0.3);
+                                border-radius: 50px;
+                                z-index: 2;
+                            }
+                            & .stepRound2 {
+                                width: 14px;
+                                height: 14px;
+                                background-color: lighten($color: $red, $amount: 0.3);
+                                border-radius: 50px;
+                                z-index: 2;
+                            }
+                            & .stepText {
+                                width: 198px;
+                                font-size: 14px;
+                                font-weight: 400;
+                                margin-left: 15px;
+                                color: lighten($color: $black, $amount: 0.7);
+                            }
+                        }
+
+                        & .shareLink {
+                            width: 24px;
+                            height: 24px;
+                            display: flex;
+                            & img {
+                                width: 100%;
+                                height: 100%;
+                                aspect-ratio: 10/10;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                    & .tripDetails {
+                        padding-top: 17px;
+                        padding-bottom: 22px;
+                        & .tripHeading {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: lighten($color: $black, $amount: 0.7);
+                            padding-bottom: 6px;
+                        }
+                        & .triptext {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: $black;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {}
+
+    @include media-breakpoint-down(xl) {}
+
+    @include media-breakpoint-down(lg) {}
+
+    @include media-breakpoint-down(md) {}
+
+    @include media-breakpoint-down(sm) {}
+}
+// ! ########################### signatureTrip End #########################
+
+//? ########################### End trip End #########################
+
+[data-page-name=endTrip]{
+    & .contentBody {
+        & .endTrip {
+            padding: 34px 18px 0px 18px;
+            & .readingInputText {
+                padding-bottom: 13px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                // text-align: center;
+                color: lighten($color: $black, $amount: 7);
+            }
+            & .readingInput {
+                padding-bottom: 33px;
+            }
+            
+        }
+    }
+}
+
+// ! ########################### End Trip End #########################
