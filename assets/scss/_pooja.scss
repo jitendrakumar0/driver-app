@@ -1343,6 +1343,35 @@
             & .readingInput {
                 padding-bottom: 33px;
             }
+
+            & .tripAccordian {
+                padding-top: 35px;
+
+                & .accordion {
+                    & .accordion-item {
+                        border: 0px !important;
+                        & .accordion-header {
+                            --bs-accordion-border-width: none !important;
+                            --bs-accordion-border-color: none !important;
+                            & .accordion-button {
+                                background-color: lighten($color: $theme1, $amount: 30);
+                                color: $black;
+                                border: 0px !important;
+                                border-radius: 0;
+                                height: 46px;
+                                &:focus {
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+                        .accordion-body {
+                            background-color: lighten($color: $theme1, $amount: 45);
+                        }
+                    }
+                    
+                }
+
+            }
             
         }
     }
