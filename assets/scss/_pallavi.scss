@@ -1,7 +1,6 @@
-
-
-       
-       
+.commanpadding{
+    padding: 0 18px !important;
+}
 // ? @@@@@@@@@@@@@@@@@@@@@@[  signin start  ]@@@@@@@@@@@@@@@@@@@@@@
 [data-page-name=index] {
     @include media-breakpoint(basic) {
@@ -1375,7 +1374,594 @@
     
         @include media-breakpoint-down(sm) {}
 }
+[data-page-name= tripsummary] {
 
+    @include media-breakpoint(basic) {
+        & .mainInner{
+            & .paddingclass{
+                padding: 0 18px;
+                & .mainheading{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 30px;
+                    margin-top: 29px;
+                    color: $black;
+                }
+                & .box{
+                    margin-bottom: 5px;
+                    & .txt1{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 30px;
+                        color: lighten($color: $black, $amount: 0.7);
+                    }
+                    & .txt2{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 30px;
+                        min-width: 74px;
+                        color: lighten($color: $black, $amount: 0.7);
+                    }
+                }
+                & .divider{
+                    width: 100%;
+                    border: 1px solid $theme1;
+                    margin-top: 16px;
+                    margin-bottom: 13px;
+                }
+                & .boxx{
+                    margin-bottom: 9px;
+                    & .txtt1{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: lighten($color: $black, $amount: 0.7);
+                    }
+                    & .txtt2{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-align: center;
+                        color: lighten($color: $black, $amount: 0.7);
+                    }
+                }
+                & .para{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: lighten($color: $black, $amount: 0.7);
+                    margin-bottom: 34px;
+                }
+                & .btnmargin{
+                    margin-bottom: 42px;
+                }
+            }
+    }
+    }
+
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name= scanbar] {
+
+    @include media-breakpoint(basic) {
+        & .mainheading{
+            font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            text-align: center;
+            color: $black;
+            margin-top: 45px;
+            padding: 0 49px;
+            margin-bottom: 60px;
+        }
+        & .qrparent{
+            margin: 0 78px;
+            & img{
+
+            }
+        }
+    }
+
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name= feedback] {
+
+    @include media-breakpoint(basic) {
+        & .paddingclass{
+            padding: 0 18px;
+            & .mainheading{
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 25px;
+                text-align: center;
+                margin-top: 32px;
+                margin-bottom: 5px;
+                color: $black;
+            }
+            & .subheading{
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 23px;
+                text-align: center;
+                color: $black;
+                margin-bottom: 52px;
+            }
+            & .txt1{
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+                text-align: center;
+                color: $black;
+                margin-bottom: 9px;
+    
+            }
+            & .txt2{
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                text-align: center;
+                color: $black;
+                margin-bottom: 20px;
+            }
+            & .starcontainer{
+                display: flex;
+                padding: 0;
+                justify-content: center;
+                & .starli{
+                    list-style: none;
+                    padding-right: 21px;
+                    
+                    &:last-child{
+                        padding-right: 0;
+                    }
+                    & img{
+                        height: 22px;
+                    }
+                }
+            }
+            & .skipclass{
+                margin-top: 26px;
+                text-align: center;
+                display: block;
+                color: $black;
+            }
+        }
+    }
+
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name= bookingrequest] {
+
+    @include media-breakpoint(basic) {
+        & .paddingclass{
+            padding: 0 18px;
+            & .mainheading{
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 25px;
+                text-align: center;
+                margin-top: 37px;
+                margin-bottom: 30px;
+                color: $black;
+            }
+            & .subheading{
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 23px;
+                text-align: center;
+                color: $black;
+                margin-bottom: 38px;
+            }
+            & .txt1{
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                text-align: center;
+                color: $black;
+                margin-bottom: 21px;
+            }
+            & .txt2{
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                text-align: center;
+                margin-bottom: 9px;
+                color: $black;
+            }
+            & .txt3{
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                text-align: center;
+                margin-bottom: 18px;
+                color: $black;
+            }
+            & .txt4{
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 23px;
+                text-align: center;
+                color: $black;
+                margin-bottom: 33px;
+            }
+            & .txtarea{
+                padding: 54px 92px;
+                border: 1px dashed  $theme1!important;
+                width: 100%;
+                height: 147px;
+                text-align: center;
+                background-color: lighten($color: $theme1, $amount: 45);
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 40px;
+                text-align: center;
+                color: $gray-200;
+                margin-bottom: 34px;
+            }
+        }
+    }
+
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name= paymentdetail] {
+
+    @include media-breakpoint(basic) {
+        & .paddingclass{
+            padding: 0 18px;
+            & .mainheading{
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 30px;
+                margin-top: 23px;
+                margin-bottom: 16px;
+                color: $black;
+            }
+            & .subheading{
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 23px;
+                text-align: center;
+                color: $black;
+                margin-bottom: 38px;
+            }
+            & .radios{
+                margin-bottom:23px;
+                overflow-x: auto;
+                margin-bottom: 21px;
+                // overflow: hidden;
+                width: 100%;
+                &::-webkit-scrollbar{
+                    display: none;
+                }
+                & .radio1{
+                    background-color: lighten($color: $theme1, $amount: 45);
+                    height: 51px;
+                    border: 1px solid $theme1;
+                    border-radius: 2px;
+                    &.rodioheight{
+                        height: 72px;
+                    }
+                    &.borderbottom{
+                        border-bottom: none;
+                    }
+                    & .roundlabel {
+                        height: 14px;
+                        width: 14px;
+                        border-radius: 50%;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid $theme3;
+                        margin-left: 12px;
+                        margin-right:7px;
+                        & span {
+                            height: 6px;
+                            width: 6px;
+                            border-radius: 50%;
+                            display: inline-flex;
+                        }
+                    }
+                    & .radioinp{
+                        width: 14px !important;
+                        height: 14px !important;
+                        border-radius: 50%;
+                        accent-color: $theme1;
+                        // margin-bottom: 26px;
+                        &:checked ~ .roundlabel{
+                            border-color: $theme1;
+                            & span{
+                                background-color: $theme1;
+                            }
+                        }
+                    }
+                    & .radiolbl{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+            & .mainheading1{
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+                margin-bottom: 16px;
+                color: $black;
+            }
+            & .qrbtn{
+                margin-top: 45px;
+                margin-bottom: 42px;
+            }
+        }
+    }
+
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name= myrateforcustomer] {
+
+    @include media-breakpoint(basic) {
+        & .paddingclass{
+            // padding: 0 18px;
+            & .mainheading{
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 20px;
+                color: $black;
+                margin-top: 20px;
+                margin-bottom: 18px;
+            }
+            & .marginn{
+                margin-top: 20px;
+                & .lbl{
+                    margin-bottom: 12px;
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                & .inp{
+                    box-shadow: none !important;
+                    border-color: $theme1 !important;
+                    padding-left: 15px;
+                    
+                    // margin-bottom: 24px;
+                }
+                & .selectclass{
+                    // margin-bottom: 18px;
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+            // & .theadclass , & .tbodyclass {
+
+            // }
+            & .theadclass{
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                border-bottom: 1px solid $gray-200;
+                padding-top: 18px;
+                padding-bottom: 15px;
+                & tr {
+                    & th {
+                        padding: 15px 0px;
+                        width: 33.33%;
+                        text-align: center;
+                        &:first-child {
+                            text-align: start;
+                        }
+                        &:last-child{
+                            text-align: end;
+                        }
+                    }
+                }
+            }
+            & .tbodyclass{
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                & tr {
+                    & td {
+                        padding: 11px 0px 17px 0px;
+                        text-align: center;
+                        &:first-child {
+                            text-align: start;
+                        }
+                        &:last-child{
+                            text-align: end;
+                        }
+                    }
+                }
+            }
+            & .mainheading1{
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 20px;
+                color: $black;
+                margin-top: 26px;
+                margin-bottom: 9px;
+            }
+        }
+    }
+
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
 [data-bs-theme=dark] {
     & [data-page-name=signin] {
         @include dark-media-breakpoint(basic) {
