@@ -60,6 +60,17 @@
 
   .headerNew {
     padding: 16px 18px;
+    & .headerNewImg {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & img {
+        aspect-ratio: 10/10;
+        object-fit: contain;
+      }
+    }
     & .headerHeading {
       font-style: normal;
       font-weight: 500;
