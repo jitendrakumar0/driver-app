@@ -66,7 +66,7 @@
         <meta property="og:image:height" content="512">
 
         <!--  Title -->
-        <title>payment method</title>
+        <title>my network I am</title>
         <!-- Required meta tags -->
         <meta name="title" content="title will be here" />
         <meta name="description" content="description will be here" />
@@ -106,7 +106,7 @@
 
     </head>
     <body>
-        <main class="container-fluid vh-100" data-page-name="paymentdetail">
+        <main class="container-fluid vh-100" data-page-name="mynetworkiam">
             <div class="row mainInner h-100">
                 <navbar class="col-12 headerNew bg-theme1">
                     <div class="headerbackground d-flex row ">
@@ -114,67 +114,110 @@
                             <a href="#"  class="headerNewImg" ><img src="assets/svg/icons/arrowleft.svg" alt="" srcset=""></a>
                         </div>
                         <div class="col text-center">
-                            Trip Summary
+                            Add Availability
                         </div>
                         <div class="col-auto"></div>
                     </div>
                 </navbar>
-                <div class="col-12 px-0 flex-fill" data-page-name="test" data-scrollbar>
+                <div class="col-12  flex-fill px-0" data-page-name="test" data-scrollbar>
                     <div class="row paddingclass">
                         <div class="col-12">
-                            <div class="mainheading">Payment Method</div>
-                        </div>
-                        <div class="col-12">
-                            <div class="radios">
-                                <div class="custom-control custom-radio radio1 rodioheight d-flex align-items-center">
+                            <div class="radios d-flex flex-nowrap text-nowrap">
+                                <div class="custom-control custom-radio radio1 d-flex align-items-center me-3">
                                     <input type="radio" class="custom-control-input radioinp d-none" id="customRadio" name="example1">
                                     <label for="customRadio" class="roundlabel"><span></span></label>
-                                    <label class="custom-control-label radiolbl" for="customRadio">Cash<br>Default payment method</label>
+                                    <label class="custom-control-label radiolbl" for="customRadio">I am free</label>
                                 </div>    
+                                <div class="custom-control custom-radio radio2 d-flex align-items-center me-3">
+                                    <input type="radio" class="custom-control-input radioinp d-none" checked id="customRadi" name="example1">
+                                    <label for="customRadi" class="roundlabel"><span></span></label>
+                                    <label class="custom-control-label radiolbl" for="customRadi">Request from / to</label>
+                                </div>  
                             </div> 
                         </div>
                         <div class="col-12">
-                            <div class="mainheading1">Signature Method
-                            </div>
+                            <div class="addtxt1">Free at</div>
+                            <input type="text" class="form-control formcontrol" placeholder="Enter Location">
                         </div>
                         <div class="col-12">
-                            <div class="radios">
-                                <div class="custom-control custom-radio radio1 d-flex align-items-center">
-                                    <input type="radio" class="custom-control-input radioinp d-none" id="customRadio1" name="example1">
-                                    <label for="customRadio1" class="roundlabel"><span></span></label>
-                                    <label class="custom-control-label radiolbl" for="customRadio">Customer Signature</label>
+                            <div class="row top">
+                                <div class="col-6">
+                                    <div class="selecttxt">Free up till:</div>
+                                    <select class="form-select selectclass formSelect2 " aria-label="Default select example" required="">
+                                        <option value="" selected="" disabled=""> <span>1 Days</span> </option>
+                                        <option value="1">Tata Indigo</option>
+                                        <option value="2">Maruthi Suzuki Dezire</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <div class="selecttxt">Date</div>
+                                    <div class="position-relative">
+                                        <img class="clockimage" src="assets/svg/icons/calanderimg.svg" alt="" srcset="">
+                                        <select class="form-select selectclass formSelect2 " aria-label="Default select example" required="">
+                                            <option value="" selected="" disabled=""> <span>12/07/2022</span> </option>
+                                            <option value="1">Tata Indigo</option>
+                                            <option value="2">Maruthi Suzuki Dezire</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-12 marginn">
+                            <label class="form-label lbl" for="companyname">Select your vehicle type</label>
+                                <select class="form-select selectclass " aria-label="Default select example" required="">
+                                    <option value="" selected="" disabled="">Ex: Maruthi Suzuki Dezire (Sedan)</option>
+                                    <option value="1">Tata Indigo</option>
+                                    <option value="2">Maruthi Suzuki Dezire</option>
+                                    <option value="3">Hyundai Xcent</option>
+                                    <option value="4">Hyundai Verna</option>
+                                    <option value="5">Toyota Etios</option>
+                                    <option value="6">Honda city</option>
+                                    <option value="7">Maruthi Ciaz</option>
+                                    <option value="8">Nissan Sunny</option>
+                                    <option value="9">Toyota Yaris</option>
+                                    <option value="10">Toyota Yaris</option>
+                                    <option value="11">Tata Tiger</option>
+                                    <option value="12">Volkswagen vento</option>
+                                </select>
+                        </div>
+                        <div class="col-12 marginn">
+                            <label class="form-label lbl" for="companyname">State</label>
+                                <select class="form-select selectclass " aria-label="Default select example" required="">
+                                    <option value="" selected="" disabled="">Uttar pradesh</option>
+                                    <option value="1">Tata Indigo</option>
+                                    <option value="2">Maruthi Suzuki Dezire</option>
+                                    <option value="3">Hyundai Xcent</option>
+                                    <option value="4">Hyundai Verna</option>
+                                    <option value="5">Toyota Etios</option>
+                                    <option value="6">Honda city</option>
+                                    <option value="7">Maruthi Ciaz</option>
+                                    <option value="8">Nissan Sunny</option>
+                                    <option value="9">Toyota Yaris</option>
+                                    <option value="10">Toyota Yaris</option>
+                                    <option value="11">Tata Tiger</option>
+                                    <option value="12">Volkswagen vento</option>
+                                </select>
+                        </div>
+                        <div class="col-12 a1">
+                            <div class="addtxt1 a2">Tax and permits available for </div>
+                            <input type="text" class="form-control formcontrol" placeholder="3 days">
+                        </div>
                         <div class="col-12">
-                            <div class="mainheading1">Online Method
+                            <div class="messageheading">Display message :</div>
+                            <div class="messagebg">
+                                <div class="message">
+                                    <div class="salutation">Hello Sir/Ma'am</div>
+                                    <div class="para"> I am presently available at<span class="line"></span>and i can take a trip from<span class="line"></span>to<span class="line"></span>,and i am available up till<span class="line"></span>. Please let me know if any bookings. My vehicle type is<span class="line"></span>. i have 3 days karnataka permit, If any booking please, </div>
+                                    <div class="link"> Click the link and add bookings</div>
+                                    <a href="#" class="msganchor"> https//:wencnknfjf/book_trip</a>
+                                    <div class="contact">Or you can call at: +91 9658868988</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-12">
-                            <div class="radios">
-                                <div class="custom-control custom-radio radio1 borderbottom d-flex align-items-center">
-                                    <input type="radio" class="custom-control-input radioinp d-none" checked id="customRadio2" name="example1">
-                                    <label for="customRadio2" class="roundlabel"><span></span></label>
-                                    <label class="custom-control-label radiolbl" for="customRadio"><img src="assets/svg/icons/googlepay.svg" alt="" srcset=""></label>
-                                </div>
-                                <div class="custom-control custom-radio radio1 borderbottom d-flex align-items-center">
-                                    <input type="radio" class="custom-control-input radioinp d-none" id="customRadio3" name="example1">
-                                    <label for="customRadio3" class="roundlabel"><span></span></label>
-                                    <label class="custom-control-label radiolbl" for="customRadio"><img src="assets/svg/icons/phonepay.svg" alt="" srcset=""></label>
-                                </div>
-                                <div class="custom-control custom-radio radio1 d-flex align-items-center">
-                                    <input type="radio" class="custom-control-input radioinp d-none" id="customRadio4" name="example1">
-                                    <label for="customRadio4" class="roundlabel"><span></span></label>
-                                    <label class="custom-control-label radiolbl" for="customRadio"><img src="assets/svg/icons/upiimg.svg" alt="" srcset=""></label>
-                                </div>
-                            </div>
+                        <div class="col-12 endd">
+                            <button class="yellowButton">Continue</button>
                         </div>
-                        <div class="col-12">
-                            <button class="yellowButton qrbtn">QR code Scanner</button>
-                        </div>
-                        
                     </div>
-                    
                 </div>
                 <!-- <footer class="col-12 footer">footer</footer> -->
             </div>

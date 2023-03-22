@@ -66,7 +66,7 @@
         <meta property="og:image:height" content="512">
 
         <!--  Title -->
-        <title>payment method</title>
+        <title>end trip page</title>
         <!-- Required meta tags -->
         <meta name="title" content="title will be here" />
         <meta name="description" content="description will be here" />
@@ -106,75 +106,79 @@
 
     </head>
     <body>
-        <main class="container-fluid vh-100" data-page-name="paymentdetail">
-            <div class="row mainInner h-100">
+        <main class="container-fluid vh-100" data-page-name="endtrippage">
+            <div class="row mainInner h-100 ">
                 <navbar class="col-12 headerNew bg-theme1">
-                    <div class="headerbackground d-flex row ">
+                    <div class="headerbackground d-flex row align-items-center">
                         <div class="col-auto">
                             <a href="#"  class="headerNewImg" ><img src="assets/svg/icons/arrowleft.svg" alt="" srcset=""></a>
                         </div>
                         <div class="col text-center">
-                            Trip Summary
+                            Add Service Entry
                         </div>
-                        <div class="col-auto"></div>
+                        <div class="col-auto">
+                        </div>
                     </div>
                 </navbar>
-                <div class="col-12 px-0 flex-fill" data-page-name="test" data-scrollbar>
+                <div class="col-12  flex-fill px-0" data-page-name="test" data-scrollbar>
                     <div class="row paddingclass">
                         <div class="col-12">
-                            <div class="mainheading">Payment Method</div>
+                            <div class="txt1">Odometer reading</div>
+                            <input type="text" class="form-control mm shadow-none nn" placeholder="478488987">
                         </div>
                         <div class="col-12">
-                            <div class="radios">
-                                <div class="custom-control custom-radio radio1 rodioheight d-flex align-items-center">
-                                    <input type="radio" class="custom-control-input radioinp d-none" id="customRadio" name="example1">
-                                    <label for="customRadio" class="roundlabel"><span></span></label>
-                                    <label class="custom-control-label radiolbl" for="customRadio">Cash<br>Default payment method</label>
-                                </div>    
-                            </div> 
-                        </div>
-                        <div class="col-12">
-                            <div class="mainheading1">Signature Method
+                            <div class="TripFile">
+                                <input type="file" class="d-none" id="endtripFile">
+                                <label for="endtripFile" class="tripLabel dashBorder">
+                                    <div class="">
+                                        <div class="fileUploadImg m-auto">
+                                            <img src="assets/svg/icons/fileUpload.svg" class="img-fluid w-100 h-100" alt="">
+                                        </div>
+                                        <div class="fileUploadText">
+                                            Upload meter photo
+                                        </div>
+                                    </div>
+                                </label>
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="radios">
-                                <div class="custom-control custom-radio radio1 d-flex align-items-center">
-                                    <input type="radio" class="custom-control-input radioinp d-none" id="customRadio1" name="example1">
-                                    <label for="customRadio1" class="roundlabel"><span></span></label>
-                                    <label class="custom-control-label radiolbl" for="customRadio">Customer Signature</label>
+                            <div class="CalendarType">
+                                <div class="row">
+                                    <div class="col-6 pe-0">
+                                        <div class="calendar">
+                                            <input type="time" id="calendar" class="d-none">
+                                            <label for="calendar" class="calendarDetail">
+                                                <div class="calendarImg">
+                                                    <img src="assets/svg/icons/calanderimg.svg" class="w-100 h-100 img-fluid" alt="">
+                                                </div>
+                                                <div class="calendarTimeText">
+                                                    Select date <br>
+                                                    12/07/2022
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="calendar">
+                                            <input type="time" id="calendar" class="d-none">
+                                            <label for="calendar" class="calendarDetail">
+                                                <div class="calendarImg">
+                                                    <img src="assets/svg/icons/clockimg.svg" class="w-100 h-100 img-fluid" alt="">
+                                                </div>
+                                                <div class="calendarTimeText">
+                                                    Select date <br>
+                                                    12/07/2022
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="mainheading1">Online Method
-                            </div>
+                            <button class="yellowButton">Start Trip</button>
                         </div>
-                        <div class="col-12">
-                            <div class="radios">
-                                <div class="custom-control custom-radio radio1 borderbottom d-flex align-items-center">
-                                    <input type="radio" class="custom-control-input radioinp d-none" checked id="customRadio2" name="example1">
-                                    <label for="customRadio2" class="roundlabel"><span></span></label>
-                                    <label class="custom-control-label radiolbl" for="customRadio"><img src="assets/svg/icons/googlepay.svg" alt="" srcset=""></label>
-                                </div>
-                                <div class="custom-control custom-radio radio1 borderbottom d-flex align-items-center">
-                                    <input type="radio" class="custom-control-input radioinp d-none" id="customRadio3" name="example1">
-                                    <label for="customRadio3" class="roundlabel"><span></span></label>
-                                    <label class="custom-control-label radiolbl" for="customRadio"><img src="assets/svg/icons/phonepay.svg" alt="" srcset=""></label>
-                                </div>
-                                <div class="custom-control custom-radio radio1 d-flex align-items-center">
-                                    <input type="radio" class="custom-control-input radioinp d-none" id="customRadio4" name="example1">
-                                    <label for="customRadio4" class="roundlabel"><span></span></label>
-                                    <label class="custom-control-label radiolbl" for="customRadio"><img src="assets/svg/icons/upiimg.svg" alt="" srcset=""></label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <button class="yellowButton qrbtn">QR code Scanner</button>
-                        </div>
-                        
                     </div>
-                    
                 </div>
                 <!-- <footer class="col-12 footer">footer</footer> -->
             </div>
