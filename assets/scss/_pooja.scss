@@ -1362,10 +1362,42 @@
                                 &:focus {
                                     box-shadow: none;
                                 }
+                                &::after {
+                                    background-image: url(../svg/icons/downArrow.svg) !important;
+                                    width: 10px;
+                                    height: 10px;
+                                    background-position: top center;
+                                    background-size: contain !important;
+                                    background: no-repeat;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
                             }
                         }
                         .accordion-body {
                             background-color: lighten($color: $theme1, $amount: 45);
+                            & .accordianItem {
+                                
+                                & .accordianItems {
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 13px;
+                                    line-height: 24px;
+                                    padding-bottom: 9px;
+                                    color: $black;
+                                }
+                                & .accordianItemsInput {
+                                    padding-bottom: 9px;
+                                    display: none;
+                                    &.show {
+                                        display: flex !important;
+                                    }
+                                }
+                                &:last-child {
+                                    padding-bottom: 0px;
+                                }
+                            }
                         }
                     }
                     
