@@ -66,7 +66,7 @@
         <meta property="og:image:height" content="512">
 
         <!--  Title -->
-        <title>end trip page</title>
+        <title>menu</title>
         <!-- Required meta tags -->
         <meta name="title" content="title will be here" />
         <meta name="description" content="description will be here" />
@@ -106,87 +106,104 @@
 
     </head>
     <body>
-        <main class="container-fluid vh-100" data-page-name="endtrippage">
-            <div class="row mainInner h-100 ">
+        <main class="container-fluid" data-page-name="menu">
+            <div class="row mainInner">
                 <navbar class="col-12 headerNew bg-theme1">
                     <div class="headerbackground d-flex row align-items-center">
                         <div class="col-auto">
                             <a href="#"  class="headerNewImg" ><img src="assets/svg/icons/arrowleft.svg" alt="" srcset=""></a>
                         </div>
                         <div class="col text-center">
-                            Start Trip
                         </div>
                         <div class="col-auto">
                         </div>
                     </div>
-                </navbar>
-                <div class="col-12  flex-fill px-0" data-page-name="test" data-scrollbar>
-                    <div class="row paddingclass">
+                </navbar>   
+                <div class="col-12 px-0 flex-fill mainBody" data-page-name="test" data-scrollbar>
+                    <div class="row">
                         <div class="col-12">
-                            <div class="txt1">Odometer reading</div>
-                            <input type="text" class="form-control mm shadow-none nn" placeholder="478488987">
-                        </div>
-                        <div class="col-12">
-                            <div class="TripFile">
-                                <input type="file" class="d-none" id="endtripFile">
-                                <label for="endtripFile" class="tripLabel dashBorder">
-                                    <div class="">
-                                        <div class="fileUploadImg m-auto">
-                                            <img src="assets/svg/icons/fileUpload.svg" class="img-fluid w-100 h-100" alt="">
-                                        </div>
-                                        <div class="fileUploadText">
-                                            Upload meter photo
-                                        </div>
-                                    </div>
-                                </label>
+                            <div class="list">
+                                <ul class="menuul">
+                                    <li class="menuli paddingclass"><a href="javascript:;" class="menuanchor">Documents</a></li>
+                                    <li class="menuli paddingclass1"><a href="javascript:;" class="menuanchor active">Maintenance </a></li>
+                                    <li class="menuli paddingclass2"><a href="javascript:;" class="menuanchor">My Trip</a></li>
+                                    <li class="menuli paddingclass2"><a href="javascript:;" class="menuanchor">My Wallet</a></li>
+                                    <li class="menuli paddingclass2"><a href="javascript:;" class="menuanchor">Term & Conditions </a></li>
+                                    <li class="menuli paddingclass2"><a href="javascript:;" class="menuanchor">Privacy Policy</a></li>
+                                    <li class="menuli paddingclass2"><a href="javascript:;" class="menuanchor"> Calendar</a></li>
+                                    <li class="menuli paddingclass2 mt-2"><a href="javascript:;" class="menuanchor" data-bs-toggle="modal" data-bs-target="#exampleModal">Logout</a></li>
+                                </ul>
+                                <div class="paddingclass"></div>
                             </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="CalendarType">
-                                <div class="row">
-                                    <div class="col-6 pe-0">
-                                        <div class="calendar">
-                                            <input type="time" id="calendar" class="d-none">
-                                            <label for="calendar" class="calendarDetail">
-                                                <div class="calendarImg">
-                                                    <img src="assets/svg/icons/calanderimg.svg" class="w-100 h-100 img-fluid" alt="">
-                                                </div>
-                                                <div class="calendarTimeText">
-                                                    Select date <br>
-                                                    12/07/2022
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="calendar">
-                                            <input type="time" id="calendar" class="d-none">
-                                            <label for="calendar" class="calendarDetail">
-                                                <div class="calendarImg">
-                                                    <img src="assets/svg/icons/clockimg.svg" class="w-100 h-100 img-fluid" alt="">
-                                                </div>
-                                                <div class="calendarTimeText">
-                                                    Select date <br>
-                                                    12/07/2022
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <a href="javascript:;" class="tripanchor">View Trip Notes</a>
-                        </div>
-                        <div class="col-12">
-                            <a href="javascript:;" class="tripanchor1">View Trip Itineary</a>
-                        </div>
-                        <div class="col-12">
-                            <button class="yellowButton">Start Trip</button>
                         </div>
                     </div>
                 </div>
-                <!-- <footer class="col-12 footer">footer</footer> -->
+                <footer class="col-12 footer border-top border-bottom">
+                    <div class="footerMenu">
+                        <ul class="menuList p-0 m-0 list-unstyled d-flex justify-content-between">
+                            <li class="item">
+                                <a class="links active" href="javascript:;">
+                                    <div class="iconOuter position-relative mx-auto">
+                                        <img class="w-100 normalImg" src="assets/svg/icons/footer/homeIcon.svg" alt="">
+                                        <img class="w-100 activeImg position-absolute opacity-0 top-0 bottom-0 end-0 start-0 m-auto" src="assets/svg/icons/footer/homeColorIcon.svg" alt="">
+                                    </div>
+                                    <span class="linkTxt text-uppercase text-black">Home</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="links" href="javascript:;">
+                                    <div class="iconOuter position-relative mx-auto">
+                                        <img class="w-100 normalImg" src="assets/svg/icons/footer/myTripsIcon.svg" alt="">
+                                        <img class="w-100 activeImg position-absolute opacity-0 top-0 bottom-0 end-0 start-0 m-auto" src="assets/svg/icons/footer/myTripsColorIcon.svg" alt="">
+                                    </div>
+                                    <span class="linkTxt text-uppercase text-black">My Trips</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="links" href="javascript:;">
+                                    <div class="iconOuter position-relative mx-auto">
+                                        <img class="w-100 normalImg" src="assets/svg/icons/footer/userIcon.svg" alt="">
+                                        <img class="w-100 activeImg position-absolute opacity-0 top-0 bottom-0 end-0 start-0 m-auto" src="assets/svg/icons/footer/userColorIcon.svg" alt="">
+                                    </div>
+                                    <span class="linkTxt text-uppercase text-black">Account</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a class="links" href="javascript:;">
+                                    <div class="iconOuter position-relative mx-auto">
+                                        <img class="w-100 normalImg" src="assets/svg/icons/footer/menuIcon.svg" alt="">
+                                        <img class="w-100 activeImg position-absolute opacity-0 top-0 bottom-0 end-0 start-0 m-auto" src="assets/svg/icons/footer/menuColorIcon.svg" alt="">
+                                    </div>
+                                    <span class="linkTxt text-uppercase text-black">Menu</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+            <div class="modal fade modalone" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modaldialog">
+                <div class="modal-content modalcontent">
+                    <div class="modal-header modalheader">
+                    <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+                    <!-- <button type="button" class="btn-close btnclose" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <!-- <div class="closebtncontainer">
+                        <img src="assets/svg/icons/closebtn.svg" alt="" srcset="">
+                    </div> -->
+                    </div>
+                    <div class="modal-body modalbody">
+                    <div class="para">Are you sure you want to log out of this app?</div>
+                    <div class="row mt-3">
+                        <div class="col-6 d-flex justify-content-end align-items-center">
+                            <a class="active  modalanchor" data-bs-dismiss="modal" aria-label="Close">Yes</a>
+                        </div>
+                        <div class="col-6">
+                            <a class="modalanchor" data-bs-dismiss="modal" aria-label="Close">No</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
             </div>
         </main>
         <script src="assets/libs/node_modules/jquery/dist/jquery.min.js"></script>

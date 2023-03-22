@@ -482,6 +482,11 @@
                         margin-bottom: 24px;
                         & .lbl{
                             margin-bottom: 12px;
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 19px;
                         }
                         & .inp{
                             box-shadow: none !important;
@@ -601,6 +606,11 @@
                         margin-bottom: 24px;
                         & .lbl{
                             margin-bottom: 12px;
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 19px;
                         }
                         & .inp{
                             box-shadow: none !important;
@@ -719,6 +729,11 @@
                         margin-bottom: 24px;
                         & .lbl{
                             margin-bottom: 12px;
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 19px;
                         }
                         & .inp{
                             box-shadow: none !important;
@@ -2921,6 +2936,28 @@
                 }
             }
         }
+        & .modalone{
+            & .modaldialog{
+                & .modalheader{
+                    padding: 0 !important;
+                }
+                & .modalbody{
+                    padding: 25px 25px;
+                    height: 148px;
+                    & .modalanchor{
+                        color: $black !important;
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        &.active{
+                            color: $blue !important;
+                        }
+                    }
+                }
+            }
+        }
     }
 
      // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -3100,7 +3137,1419 @@
             & .nn{
                 margin-bottom: 26px;
             }
+            & .tripanchor{
+                width: 100%;
+                height: 46px !important;
+                color: $black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center !important;
+                border-radius: 2px;
+                margin-top: 27px;
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                background-color: lighten($color: $theme1, $amount: 30);
+            }
+            & .tripanchor1{
+                width: 100%;
+                height: 46px !important;
+                color: $black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center !important;
+                border-radius: 2px;
+                margin-top: 30px;
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                background-color: lighten($color: $theme1, $amount: 45);
+                margin-bottom: 35px;
+                border: 1px solid $theme1;
+                border-radius: 2px;
+            }
+        }
+    }
+
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name= starttrippage] {
+
+    @include media-breakpoint(basic) {
+        & .paddingclass{
+            padding: 27px 18px;
+            & .txt1{
+                margin-bottom: 14px;
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+            }
+            & .nn{
+                margin-bottom: 26px;
+            }
+            & .CalendarType{
+                margin-bottom: 3px;
+            }
+            & .tripaccordion{
+                margin-top: 27px;
+                & .tripaccordionitem{
+                    & .tripaccordionheader{
+                        & .tripaccordionbtn{
+                            box-shadow: none !important;
+                            border-color: none !important;
+                            background-color: lighten($color: $theme1, $amount: 45);
+                            border-radius: 2px !important;
+                            height: 46px !important;
+                            color: $black;
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 20px;
+                            &.active{
+                                background-color: lighten($color: $theme1, $amount: 30);
+                            }
+                            &::after{
+                                content: '';
+                                background-image: url(../svg/icons/addmore.svg);
+                            }
+                        }
+                    }
+                    & .tripaccordioncollapse{
+                        & .tripaccordionbody{
+                            padding: 19px 9px !important;
+                            background-color: lighten($color: $theme1, $amount: 45);
+                        }
+                    }
+                }
+            }
+            & .formcheck{
+                & .formcheckinp{
+                    border-color: $theme1;
+                }
+            }
+            .nnn{
+                margin-top: 33px;
+            }
+        }
+    }
+
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name= menu] {
+
+    @include media-breakpoint(basic) {
+            .paddingclass{
+                padding: 35px 18px 20px 18px;
+            }
+            .paddingclass1{
+                // padding-left: 18px;
+            }
+            .paddingclass2{
+                padding: 20px 18px 0 18px;
+            }
+            & .list{
+                & .menuul{
+                    padding: 0;
+                    & .menuli{
+                        list-style: none;
+                        text-decoration: none;
+                        // margin-bottom: 20px;
+                        & .menuanchor{
+                            color: $black;
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 20px;
+                            &.active{
+                                background-color: lighten($color: $theme1, $amount: 45);
+                                width: 100%;
+                                height: 44px;
+                                display: flex;
+                                padding-left: 18px;
+                                border-radius: 2px;
+                                justify-content: start;
+                                align-items: center ;
+                            }
+                        }
+                    }
+                }
+            }
+            & .modalone{
+                & .modaldialog{
+                    & .modalheader{
+                        padding: 0 !important;
+                    }
+                    & .modalbody{
+                        padding: 25px 25px;
+                        height: 128px;
+                        & .modalanchor{
+                            color: $black !important;
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 20px;
+                            &.active{
+                                color: $blue !important;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name= termscondition] {
+
+    @include media-breakpoint(basic) {
+            .paddingclass{
+                padding: 28px 18px;
+                & .mainheading{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 23px;
+                    color: $black;
+                    margin-bottom: 9px;
+                }
+                & .para{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: $black;
+                    margin-bottom: 31px;
+                }
+            }
             
+    }
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name= privacypolicy] {
+
+    @include media-breakpoint(basic) {
+            .paddingclass{
+                padding: 28px 18px;
+                & .mainheading{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 23px;
+                    color: $black;
+                    margin-bottom: 9px;
+                }
+                & .para{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: $black;
+                    margin-bottom: 31px;
+                }
+            }
+            
+    }
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+        [data-page-name= bookingrequest] {
+}
+
+    @include media-breakpoint(basic) {
+            .mainInner{
+                & .bookingheader{
+                    width: 100% !important;
+                    height: 80px;
+                    background-color: $theme1;
+                    padding: 25px 18px 21px 18px;
+                    & .headerlefttxt{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $black;
+                    }
+                    & .headerryttxt{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $black;
+                        display: flex;
+                        justify-content: end;
+                    }
+                }
+                & .mapparent{
+                    width: 100%;
+                    height: 327px;
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                & .rowclass{
+                    margin-top: 20px;
+                    margin-bottom: 9px;
+                    padding: 0 18px;
+                    display: flex;
+                    align-items: center;
+                    & .txt1{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: $black;
+                    }
+                    & .txt2{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: $black;
+                        display: flex;
+                        justify-content: end;
+                    }
+                    
+                }
+                & .txt3{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 18px;
+                    display: flex;
+                    justify-content: end;
+                    padding: 0 18px;
+                    color: $green;
+                    margin-bottom: 5px;
+                }
+                & .steprow{
+                    padding: 0 18px;
+                    & .steps {
+                        padding-top: 25px;
+                        padding-bottom: 32px;
+                        border-bottom: 2px dashed $black;
+                        & .stepsborder {
+                            position: relative;
+                            padding-bottom: 25px;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                border: 1px dashed $black;
+                                height: 100%;
+                                left: 18px;
+                                top: 8px;
+                                z-index: 1;
+                                
+                            }
+                            &:last-child {
+                                padding-bottom: 0px;
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                            & .stepRound1 {
+                                width: 14px;
+                                height: 14px;
+                                background-color: lighten($color: $green, $amount: 0.3);
+                                border-radius: 50px;
+                                z-index: 2;
+                            }
+                            & .stepRound2 {
+                                width: 14px;
+                                height: 14px;
+                                background-color: lighten($color: $red, $amount: 0.3);
+                                border-radius: 50px;
+                                z-index: 2;
+                            }
+                            & .stepText {
+                                width: 198px;
+                                font-size: 14px;
+                                font-weight: 400;
+                                margin-left: 15px;
+                                color: lighten($color: $black, $amount: 0.7);
+                            }
+                        }
+                    }
+                }
+                & .paddingclass{
+                    padding: 0 18px;
+                    margin-bottom: 20px;
+                    & .tripDetails {
+                        padding-top: 17px;
+                        padding-bottom: 22px;
+                        & .tripHeading {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: lighten($color: $black, $amount: 0.7);
+                            padding-bottom: 6px;
+                        }
+                        & .triptext {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: $black;
+                        }
+                    }
+                }
+                & .paddingg{
+                    margin:  0 18px;
+                    margin-bottom: 40px;
+                    & .btnparent{
+                        width: 100%;
+                        height: 46px;
+                        background-color: $theme1;
+                        border: none;
+                        border-radius: 2px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 15px;
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        & .txt1{
+
+                        }
+                        & .txt2{
+                            & img{
+                                width: 12px;
+                                height: 12px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+            
+    }
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name= bookingontheway] {
+
+    @include media-breakpoint(basic) {
+            .mainInner{
+                & .bookingheader{
+                    width: 100% !important;
+                    height: 80px;
+                    background-color: $theme1;
+                    padding: 25px 18px 21px 18px;
+                    & .headerlefttxt{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $black;
+                    }
+                    & .headerryttxt{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $black;
+                        display: flex;
+                        justify-content: end;
+                    }
+                }
+                & .mapparent{
+                    width: 100%;
+                    height: 327px;
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                & .rowclass{
+                    margin-top: 20px;
+                    margin-bottom: 9px;
+                    padding: 0 18px;
+                    display: flex;
+                    align-items: center;
+                    & .txt1{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: $black;
+                    }
+                    & .txt2{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: $black;
+                        display: flex;
+                        justify-content: end;
+                    }
+                    
+                }
+                & .txt3{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 18px;
+                    display: flex;
+                    justify-content: end;
+                    padding: 0 18px;
+                    color: $green;
+                    margin-bottom: 5px;
+                }
+                & .steprow{
+                    padding: 0 18px;
+                    & .steps {
+                        padding-top: 25px;
+                        padding-bottom: 32px;
+                        border-bottom: 2px dashed $black;
+                        & .stepsborder {
+                            position: relative;
+                            padding-bottom: 25px;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                border: 1px dashed $black;
+                                height: 100%;
+                                left: 18px;
+                                top: 8px;
+                                z-index: 1;
+                                
+                            }
+                            &:last-child {
+                                padding-bottom: 0px;
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                            & .stepRound1 {
+                                width: 14px;
+                                height: 14px;
+                                background-color: lighten($color: $green, $amount: 0.3);
+                                border-radius: 50px;
+                                z-index: 2;
+                            }
+                            & .stepRound2 {
+                                width: 14px;
+                                height: 14px;
+                                background-color: lighten($color: $red, $amount: 0.3);
+                                border-radius: 50px;
+                                z-index: 2;
+                            }
+                            & .stepText {
+                                width: 198px;
+                                font-size: 14px;
+                                font-weight: 400;
+                                margin-left: 15px;
+                                color: lighten($color: $black, $amount: 0.7);
+                            }
+                        }
+                    }
+                }
+                & .callparent{
+                    background-color: $theme1;
+                        width: 43px;
+                        height: 43px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        box-shadow: 0px 4px 50px $theme1;
+                    & img{
+                        height: 18px;
+                        width: 18px;
+                    }
+                }
+                & .paddingclass{
+                    padding: 0 18px;
+                    margin-bottom: 20px;
+                    & .tripDetails {
+                        padding-top: 17px;
+                        padding-bottom: 22px;
+                        & .tripHeading {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: lighten($color: $black, $amount: 0.7);
+                            padding-bottom: 6px;
+                        }
+                        & .triptext {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: $black;
+                        }
+                    }
+                }
+                & .paddingg{
+                    margin:  0 18px;
+                    margin-bottom: 40px;
+                    & .btnparent{
+                        width: 100%;
+                        height: 46px;
+                        background-color: $theme1;
+                        border: none;
+                        border-radius: 2px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 15px;
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        & .txt1{
+
+                        }
+                        & .txt2{
+                            & img{
+                                width: 12px;
+                                height: 12px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+            
+    }
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name= bookingpickup] {
+
+    @include media-breakpoint(basic) {
+            .mainInner{
+                & .bookingheader{
+                    width: 100% !important;
+                    height: 80px;
+                    background-color: $theme1;
+                    padding: 25px 18px 21px 18px;
+                    & .headerlefttxt{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $black;
+                    }
+                    & .headerryttxt{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $black;
+                        display: flex;
+                        justify-content: end;
+                    }
+                }
+                & .mapparent{
+                    width: 100%;
+                    height: 327px;
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                & .rowclass{
+                    margin-top: 20px;
+                    margin-bottom: 9px;
+                    padding: 0 18px;
+                    display: flex;
+                    align-items: center;
+                    & .txt1{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: $black;
+                    }
+                    & .txt2{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: $black;
+                        display: flex;
+                        justify-content: end;
+                    }
+                    
+                }
+                & .txt3{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 18px;
+                    display: flex;
+                    justify-content: end;
+                    padding: 0 18px;
+                    color: $green;
+                    margin-bottom: 5px;
+                }
+                & .steprow{
+                    padding: 0 18px;
+                    & .steps {
+                        padding-top: 25px;
+                        padding-bottom: 32px;
+                        border-bottom: 2px dashed $black;
+                        & .stepsborder {
+                            position: relative;
+                            padding-bottom: 25px;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                border: 1px dashed $black;
+                                height: 100%;
+                                left: 18px;
+                                top: 8px;
+                                z-index: 1;
+                                
+                            }
+                            &:last-child {
+                                padding-bottom: 0px;
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                            & .stepRound1 {
+                                width: 14px;
+                                height: 14px;
+                                background-color: lighten($color: $green, $amount: 0.3);
+                                border-radius: 50px;
+                                z-index: 2;
+                            }
+                            & .stepRound2 {
+                                width: 14px;
+                                height: 14px;
+                                background-color: lighten($color: $red, $amount: 0.3);
+                                border-radius: 50px;
+                                z-index: 2;
+                            }
+                            & .stepText {
+                                width: 198px;
+                                font-size: 14px;
+                                font-weight: 400;
+                                margin-left: 15px;
+                                color: lighten($color: $black, $amount: 0.7);
+                            }
+                            }
+                        }
+                }
+                & .paddingclass{
+                    padding: 0 18px;
+                    margin-bottom: 20px;
+                    & .tripDetails {
+                        padding-top: 17px;
+                        padding-bottom: 22px;
+                        & .tripHeading {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: lighten($color: $black, $amount: 0.7);
+                            padding-bottom: 6px;
+                        }
+                        & .triptext {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: $black;
+                        }
+                    }
+                }
+                & .paddingg{
+                    margin:  0 18px;
+                    & .btnparent{
+                        width: 100%;
+                        height: 46px;
+                        background-color: $theme1;
+                        border: none;
+                        border-radius: 2px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 15px;
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        & .txt1{
+
+                        }
+                        & .txt2{
+                            & img{
+                                width: 12px;
+                                height: 12px;
+                            }
+                        }
+                    }
+                }
+                & .last{
+                    margin-bottom: 40px;
+                }
+            }
+            
+    }
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name= bookingend] {
+
+    @include media-breakpoint(basic) {
+            .mainInner{
+                & .bookingheader{
+                    width: 100% !important;
+                    height: 80px;
+                    background-color: $theme1;
+                    padding: 25px 18px 21px 18px;
+                    & .headerlefttxt{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $black;
+                    }
+                    & .headerryttxt{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $black;
+                        display: flex;
+                        justify-content: end;
+                    }
+                }
+                & .mapparent{
+                    width: 100%;
+                    height: 327px;
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                & .rowclass{
+                    margin-top: 20px;
+                    margin-bottom: 9px;
+                    padding: 0 18px;
+                    display: flex;
+                    align-items: center;
+                    & .txt1{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: $black;
+                    }
+                    & .txt2{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: $black;
+                        display: flex;
+                        justify-content: end;
+                    }
+                    
+                }
+                & .txt3{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 18px;
+                    display: flex;
+                    justify-content: end;
+                    padding: 0 18px;
+                    color: $green;
+                    margin-bottom: 5px;
+                }
+                & .steprow{
+                    padding: 0 18px;
+                    & .steps {
+                        padding-top: 25px;
+                        padding-bottom: 32px;
+                        border-bottom: 2px dashed $black;
+                        & .stepsborder {
+                            position: relative;
+                            padding-bottom: 25px;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                border: 1px dashed $black;
+                                height: 100%;
+                                left: 18px;
+                                top: 8px;
+                                z-index: 1;
+                                
+                            }
+                            &:last-child {
+                                padding-bottom: 0px;
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                            & .stepRound1 {
+                                width: 14px;
+                                height: 14px;
+                                background-color: lighten($color: $green, $amount: 0.3);
+                                border-radius: 50px;
+                                z-index: 2;
+                            }
+                            & .stepRound2 {
+                                width: 14px;
+                                height: 14px;
+                                background-color: lighten($color: $red, $amount: 0.3);
+                                border-radius: 50px;
+                                z-index: 2;
+                            }
+                            & .stepText {
+                                width: 198px;
+                                font-size: 14px;
+                                font-weight: 400;
+                                margin-left: 15px;
+                                color: lighten($color: $black, $amount: 0.7);
+                            }
+                        }
+                    }
+                }
+                & .paddingclass{
+                    padding: 0 18px;
+                    margin-bottom: 20px;
+                    & .tripDetails {
+                        padding-top: 17px;
+                        padding-bottom: 22px;
+                        & .tripHeading {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: lighten($color: $black, $amount: 0.7);
+                            padding-bottom: 6px;
+                        }
+                        & .triptext {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: $black;
+                        }
+                    }
+                }
+                & .paddingg{
+                    margin:  0 18px;
+                    & .btnparent{
+                        width: 100%;
+                        height: 46px;
+                        background-color: $theme1;
+                        border: none;
+                        border-radius: 2px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 15px;
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        & .txt1{
+
+                        }
+                        & .txt2{
+                            & img{
+                                width: 12px;
+                                height: 12px;
+                            }
+                        }
+                    }
+                }
+                & .last{
+                    margin-bottom: 40px;
+                    & .mm{
+                        padding: 0 18px !important;
+                    }
+                    & .cancelButton{
+                        height: 46px;
+                    }
+                    & .startButton{
+                        height: 46px;
+                        background-color: $theme1;
+                    }
+                }
+            }
+            .modalone{
+                & .modaldialog{
+                    & .modalcontent{
+                        & .modalheader{
+                            padding: 0 !important;
+                        }
+                        & .modalbody{
+                            & .head{
+                                font-family: 'Outfit';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 18px;
+                                line-height: 23px;
+                            }
+                            & .subhead{
+                                font-family: 'Outfit';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 20px;
+                                margin-bottom: 27px;
+                            }
+                            & .radios{
+                                margin-bottom:23px;
+                                overflow-x: auto;
+                                // overflow: hidden;
+                                width: 100%;
+                                &::-webkit-scrollbar{
+                                    display: none;
+                                }
+                                & .roundlabel {
+                                    height: 14px;
+                                    width: 14px;
+                                    border-radius: 50%;
+                                    display: inline-flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    border: 1px solid $theme3;
+                                    & span {
+                                        height: 6px;
+                                        width: 6px;
+                                        border-radius: 50%;
+                                        display: inline-flex;
+                                    }
+                                }
+                                & .radioinp{
+                                    width: 14px !important;
+                                    height: 14px !important;
+                                    border-radius: 50%;
+                                    accent-color: $theme1;
+                                    margin-bottom: 26px;
+                                    &:checked ~ .roundlabel{
+                                        border-color: $theme1;
+                                        & span{
+                                            background-color: $theme1;
+                                        }
+                                    }
+                                }
+                                & .radiolbl{
+                                    font-family: 'Outfit';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    margin-left: 5px;
+                                    // margin-right: 25px;
+                                }
+                            }
+                            & .txt{
+                                margin-top: 21px;
+                                font-family: 'Outfit';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 18px;
+                                margin-bottom: 18px;
+                            }
+                            & .txtareaclass{
+                                width: 100%;
+                                height: 106px;
+                                border-color: $theme1;
+                                border-radius: 2px;
+                                padding: 5px 10px;
+                                font-family: 'Outfit';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 15px;
+                                margin-bottom: 41px;
+                            }
+                            & .red{
+                                width: 100%;
+                                height: 46px;
+                                background-color: $red;
+                                border: none;
+                                border-radius: 2px;
+                                font-family: 'Outfit';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: $white;
+
+                            }
+                        }
+                    }
+                }
+            }
+    }
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name= menuprofile] {
+
+    @include media-breakpoint(basic) {
+            & .paddingclass{
+                padding: 0 18px;
+                & .profilecontainer{
+                    width: 81px;
+                    height: 81px;
+                    background-color: $gray-300;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 27px;
+                    margin-bottom: 8px;
+                    & img{
+                        width: 44px;
+                        height: 44px;
+                    }
+                    & .editimg{
+                        position:absolute;
+                        top: 70px;
+                        right:128px;
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+                & .myform{
+                    & .marginn{
+                        margin-bottom: 24px;
+                        & .lbl{
+                            margin-bottom: 12px;
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 19px;
+                        }
+                        & .inp{
+                            box-shadow: none !important;
+                            border-color: $theme1 !important;
+                            padding-left: 15px;
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            // margin-bottom: 24px;
+                        }
+                        & .selectclass{
+                            color: $black !important;
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+    }
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name= editprofile] {
+
+    @include media-breakpoint(basic) {
+        & .paddingclass{
+            padding: 0 18px;
+            & .profilecontainer{
+                width: 81px;
+                height: 81px;
+                background-color: $gray-300;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 27px;
+                margin-bottom: 8px;
+                & img{
+                    width: 44px;
+                    height: 44px;
+                }
+                & .editimg{
+                    position:absolute;
+                    top: 70px;
+                    right:128px;
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+            & .myform{
+                & .marginn{
+                    margin-bottom: 24px;
+                    & .lbl{
+                        margin-bottom: 12px;
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 19px;
+                    }
+                    & .inp{
+                        box-shadow: none !important;
+                        border-color: $theme1 !important;
+                        padding-left: 15px;
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        // margin-bottom: 24px;
+                    }
+                    & .selectclass{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+            }
+            & .mm{
+                margin-bottom: 40px;
+            }
         }
     }
 

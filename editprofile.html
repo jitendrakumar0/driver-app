@@ -66,7 +66,7 @@
         <meta property="og:image:height" content="512">
 
         <!--  Title -->
-        <title>end trip page</title>
+        <title>edit profile</title>
         <!-- Required meta tags -->
         <meta name="title" content="title will be here" />
         <meta name="description" content="description will be here" />
@@ -106,7 +106,7 @@
 
     </head>
     <body>
-        <main class="container-fluid vh-100" data-page-name="endtrippage">
+        <main class="container-fluid vh-100" data-page-name="editprofile">
             <div class="row mainInner h-100 ">
                 <navbar class="col-12 headerNew bg-theme1">
                     <div class="headerbackground d-flex row align-items-center">
@@ -114,7 +114,7 @@
                             <a href="#"  class="headerNewImg" ><img src="assets/svg/icons/arrowleft.svg" alt="" srcset=""></a>
                         </div>
                         <div class="col text-center">
-                            Start Trip
+                            Edit Profile
                         </div>
                         <div class="col-auto">
                         </div>
@@ -122,67 +122,77 @@
                 </navbar>
                 <div class="col-12  flex-fill px-0" data-page-name="test" data-scrollbar>
                     <div class="row paddingclass">
-                        <div class="col-12">
-                            <div class="txt1">Odometer reading</div>
-                            <input type="text" class="form-control mm shadow-none nn" placeholder="478488987">
+                        <div class="col-12 d-flex justify-content-center align-items-center">
+                            <input type="file" class=" d-none" name="" id="pp">
+                            <label for="pp" class="profilecontainer">
+                                <img src="assets/svg/icons/profileicon.svg" alt="" srcset="">
+                            </label>
+                            <!-- <div class="profilecontainer">
+                                <img src="assets/svg/icons/profileicon.svg" alt="" srcset="">
+                            </div> -->
                         </div>
                         <div class="col-12">
-                            <div class="TripFile">
-                                <input type="file" class="d-none" id="endtripFile">
-                                <label for="endtripFile" class="tripLabel dashBorder">
-                                    <div class="">
-                                        <div class="fileUploadImg m-auto">
-                                            <img src="assets/svg/icons/fileUpload.svg" class="img-fluid w-100 h-100" alt="">
-                                        </div>
-                                        <div class="fileUploadText">
-                                            Upload meter photo
-                                        </div>
-                                    </div>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="CalendarType">
+                            <form class="myform needs-validation" novalidate>
                                 <div class="row">
-                                    <div class="col-6 pe-0">
-                                        <div class="calendar">
-                                            <input type="time" id="calendar" class="d-none">
-                                            <label for="calendar" class="calendarDetail">
-                                                <div class="calendarImg">
-                                                    <img src="assets/svg/icons/calanderimg.svg" class="w-100 h-100 img-fluid" alt="">
-                                                </div>
-                                                <div class="calendarTimeText">
-                                                    Select date <br>
-                                                    12/07/2022
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="calendar">
-                                            <input type="time" id="calendar" class="d-none">
-                                            <label for="calendar" class="calendarDetail">
-                                                <div class="calendarImg">
-                                                    <img src="assets/svg/icons/clockimg.svg" class="w-100 h-100 img-fluid" alt="">
-                                                </div>
-                                                <div class="calendarTimeText">
-                                                    Select date <br>
-                                                    12/07/2022
-                                                </div>
-                                            </label>
+                                    <div class="col-12 marginn">
+                                        <label class="form-label lbl" for="fullname">Full Name</label>
+                                        <input class="form-control inp" type="text" placeholder="Pawan Kumar" required>
+                                        <div class="invalid-feedback">
+                                            Please enter a fullname.
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="row">
+                                    <div class="col-12 marginn">
+                                        <label class="form-label lbl" for="mobilenumber">Mobile Number</label>
+                                        <input class="inp phone form-control" type="tel" placeholder="+91" required>
+                                        <div class="invalid-feedback">
+                                            Please enter a valid mobile number.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 marginn">
+                                        <label class="form-label lbl" for="emailid">E-mail ID</label>
+                                        <input class="inp phone form-control" type="email" placeholder="tripme@gmail.com" required>
+                                        <div class="invalid-feedback">
+                                            Please enter a valid mail.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 marginn">
+                                        <label class="form-label lbl" for="companyname">Company Name</label>
+                                        <input class="inp phone form-control" type="text" placeholder="Tripme" required>
+                                        <div class="invalid-feedback">
+                                            Please enter company name.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 marginn">
+                                        <label class="form-label lbl" for="companyname">Select your vehicle type</label>
+                                        <select class="form-select selectclass " aria-label="Default select example" required>
+                                            <option value="" selected disabled >Ex: Maruthi Suzuki Dezire (Sedan)</option>
+                                            <option value="1">Tata Indigo</option>
+                                            <option value="2">Maruthi Suzuki Dezire</option>
+                                            <option value="3">Hyundai Xcent</option>
+                                            <option value="4">Hyundai Verna</option>
+                                            <option value="5">Toyota Etios</option>
+                                            <option value="6">Honda city</option>
+                                            <option value="7">Maruthi Ciaz</option>
+                                            <option value="8">Nissan Sunny</option>
+                                            <option value="9">Toyota Yaris</option>
+                                            <option value="10">Toyota Yaris</option>
+                                            <option value="11">Tata Tiger</option>
+                                            <option value="12">Volkswagen vento</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                        <div class="col-12">
-                            <a href="javascript:;" class="tripanchor">View Trip Notes</a>
-                        </div>
-                        <div class="col-12">
-                            <a href="javascript:;" class="tripanchor1">View Trip Itineary</a>
-                        </div>
-                        <div class="col-12">
-                            <button class="yellowButton">Start Trip</button>
+                        <div class="col-12 mm">
+                            <button class="yellowButton">Save</button>
                         </div>
                     </div>
                 </div>

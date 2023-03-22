@@ -66,7 +66,7 @@
         <meta property="og:image:height" content="512">
 
         <!--  Title -->
-        <title>end trip page</title>
+        <title>start trip page</title>
         <!-- Required meta tags -->
         <meta name="title" content="title will be here" />
         <meta name="description" content="description will be here" />
@@ -106,7 +106,7 @@
 
     </head>
     <body>
-        <main class="container-fluid vh-100" data-page-name="endtrippage">
+        <main class="container-fluid vh-100" data-page-name="starttrippage">
             <div class="row mainInner h-100 ">
                 <navbar class="col-12 headerNew bg-theme1">
                     <div class="headerbackground d-flex row align-items-center">
@@ -176,13 +176,61 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <a href="javascript:;" class="tripanchor">View Trip Notes</a>
+                            <div class="accordion tripaccordion" id="accordionExample">
+                                <div class="accordion-item tripaccordionitem">
+                                    <div class="accordion-header tripaccordionheader" id="headingOne">
+                                        <button class="accordion-button tripaccordionbtn active" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Add Trip Notes
+                                        </button>
+                                    </div>
+                                    <div id="collapseOne" class="accordion-collapse collapse show tripaccordioncollapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body tripaccordionbody">
+                                            <div class="form-check formcheck">
+                                                <input class="form-check-input shadow-none formcheckinp" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Carry Water Bottels
+                                            </label>
+                                            </div>
+                                            <div class="form-check formcheck">
+                                            <input class="form-check-input shadow-none formcheckinp" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Carry New paper
+                                            </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-12">
-                            <a href="javascript:;" class="tripanchor1">View Trip Itineary</a>
+                            <div class="accordion tripaccordion" id="accordionExample">
+                                <div class="accordion-item tripaccordionitem">
+                                    <div class="accordion-header tripaccordionheader" id="headingOne">
+                                        <button class="accordion-button tripaccordionbtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                                            Trip Itineary
+                                        </button>
+                                    </div>
+                                    <div id="collapseOne1" class="accordion-collapse collapse show tripaccordioncollapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body tripaccordionbody">
+                                            <div class="form-check formcheck">
+                                                <input class="form-check-input shadow-none formcheckinp" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Carry Water Bottels
+                                            </label>
+                                            </div>
+                                            <div class="form-check formcheck">
+                                            <input class="form-check-input shadow-none formcheckinp" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Carry New paper
+                                            </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12">
-                            <button class="yellowButton">Start Trip</button>
+                        <div class="col-12 nnn">
+                            <button class="yellowButton">Submit</button>
                         </div>
                     </div>
                 </div>
