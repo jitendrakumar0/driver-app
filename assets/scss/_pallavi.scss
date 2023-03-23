@@ -917,6 +917,29 @@
                 }
             }
         }
+        .modalone{
+            & .modaldialog{
+                & .modalcontent{
+                    & .modalheader{
+                        padding: 0 !important;
+                    }
+                    & .modalbody{
+                        & .txt{
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: $black;
+                            margin-bottom: 13px;
+                        }
+                        & .inpp{
+                            margin-bottom: 24px;
+                        }
+                    }
+                }
+            }
+        }
     }
      // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
         @include media-breakpoint-up(sm) {}
@@ -2427,14 +2450,17 @@
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 20px;
-                    & .selectclass{
-                        & span{
-                            font-family: 'Outfit';
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 14px;
-                            line-height: 18px;
-                            color: $black !important;
+                    & .back{
+                        background-color: lighten($color: $theme1, $amount: 50);
+                        & .selectclass{
+                            & span{
+                                font-family: 'Outfit';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 18px;
+                                color: $black !important;
+                            }
                         }
                     }
                 }
@@ -3913,7 +3939,7 @@
                 }
                 & .mapparent{
                     width: 100%;
-                    height: 327px;
+                    height: 350px;
                     & img{
                         width: 100%;
                         height: 100%;
@@ -4032,6 +4058,210 @@
                 }
                 & .paddingg{
                     margin:  0 18px;
+                    & .btnparent{
+                        width: 100%;
+                        height: 46px;
+                        background-color: $theme1;
+                        border: none;
+                        border-radius: 2px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 15px;
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        & .txt1{
+
+                        }
+                        & .txt2{
+                            & img{
+                                width: 12px;
+                                height: 12px;
+                            }
+                        }
+                    }
+                }
+                & .last{
+                    margin-bottom: 40px;
+                }
+            }
+            
+    }
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name= bookingRequest] {
+
+    @include media-breakpoint(basic) {
+            .mainInner{
+                & .bookingheader{
+                    width: 100% !important;
+                    height: 80px;
+                    background-color: $theme1;
+                    padding: 25px 18px 21px 18px;
+                    & .headerlefttxt{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $black;
+                    }
+                    & .headerryttxt{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $black;
+                        display: flex;
+                        justify-content: end;
+                    }
+                }
+                & .mapparent{
+                    width: 100%;
+                    height: 350px;
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                & .rowclass{
+                    margin-top: 20px;
+                    margin-bottom: 9px;
+                    padding: 0 18px;
+                    display: flex;
+                    align-items: center;
+                    & .txt1{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: $black;
+                    }
+                    & .txt2{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: $black;
+                        display: flex;
+                        justify-content: end;
+                    }
+                    
+                }
+                & .txt3{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 18px;
+                    display: flex;
+                    justify-content: end;
+                    padding: 0 18px;
+                    color: $green;
+                    margin-bottom: 5px;
+                }
+                & .steprow{
+                    padding: 0 18px;
+                    & .steps {
+                        padding-top: 25px;
+                        padding-bottom: 32px;
+                        border-bottom: 2px dashed $black;
+                        & .stepsborder {
+                            position: relative;
+                            padding-bottom: 25px;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                border: 1px dashed $black;
+                                height: 100%;
+                                left: 18px;
+                                top: 8px;
+                                z-index: 1;
+                                
+                            }
+                            &:last-child {
+                                padding-bottom: 0px;
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                            & .stepRound1 {
+                                width: 14px;
+                                height: 14px;
+                                background-color: lighten($color: $green, $amount: 0.3);
+                                border-radius: 50px;
+                                z-index: 2;
+                            }
+                            & .stepRound2 {
+                                width: 14px;
+                                height: 14px;
+                                background-color: lighten($color: $red, $amount: 0.3);
+                                border-radius: 50px;
+                                z-index: 2;
+                            }
+                            & .stepText {
+                                width: 198px;
+                                font-size: 14px;
+                                font-weight: 400;
+                                margin-left: 15px;
+                                color: lighten($color: $black, $amount: 0.7);
+                            }
+                            }
+                        }
+                }
+                & .paddingclass{
+                    padding: 0 18px;
+                    margin-bottom: 20px;
+                    & .tripDetails {
+                        padding-top: 17px;
+                        padding-bottom: 22px;
+                        & .tripHeading {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: lighten($color: $black, $amount: 0.7);
+                            padding-bottom: 6px;
+                        }
+                        & .triptext {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: $black;
+                        }
+                    }
+                }
+                & .paddingg{
+                    margin:  0 18px;
+                    margin-bottom: 40px;
                     & .btnparent{
                         width: 100%;
                         height: 46px;
@@ -4427,8 +4657,8 @@
                     }
                     & .editimg{
                         position:absolute;
-                        top: 70px;
-                        right:128px;
+                        top: 50%;
+                        right:36%;
                         width: 15px;
                         height: 15px;
                     }
@@ -4553,6 +4783,1199 @@
         }
     }
 
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name= fuel] {
+
+    @include media-breakpoint(basic) {
+        & .fuelmargin{
+            margin-top: 26px;
+            padding: 0 18px;
+            & .toptxt{
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 15px;
+                color: $black;
+                margin-bottom: 16px;
+            }
+            & .box{
+                width: 100%;
+                height: 46px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid $theme1;
+                border-radius: 2px;
+                margin-bottom: 37px;
+                & .boxtxt{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 19px;
+                    color: $black;
+                }
+            }
+            & .capacity{
+                margin-top: 19px;
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+                color: $black;
+            }
+            & .capacity1{
+                margin-top: 10px;
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                color: $black;
+                line-height: 23px;
+            }
+        }
+    }
+
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name= fueltimeline] {
+
+    @include media-breakpoint(basic) {
+        & .fuelmargin{
+            margin-top: 29px;
+            padding: 0 18px;
+            & .calendartxt{
+                margin-bottom: 20px;
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                color: $black;
+                margin-left: 30px;
+                position: relative;
+                &::before{
+                    content: '';
+                    width: 11px;
+                    height: 11px;
+                    border-radius: 50%;
+                    background-color: $theme1;
+                    position: absolute;
+                    margin-left: -21px;
+                    margin-top: 5px;
+                }
+                &::after{
+                    content: "";
+                    width: 19px;
+                    height: 19px;
+                    border-radius: 50%;
+                    border: 1px dashed $theme1;
+                    position: absolute;
+                    left: -36px;
+                    margin-left: 11px;
+                    margin-top: 1px;
+                }
+            }
+            & .boxbg{
+                background-color: lighten($color: $theme1, $amount: 45);
+                padding: 9px 10px 10px 9px;
+                margin-left: 20px;
+                margin-right: 19px;
+                margin-bottom: 26px;
+                
+                & .boxmainhead{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: $green;
+                    margin-bottom: 10px;
+                    position: relative;
+                    &::before{
+                        content: '';
+                        content: "";
+                        border: 1px dashed $theme1;
+                        position: absolute;
+                        height: 235px;
+                        margin-left: -28px;
+                        margin-top: -38px;
+                    }
+                }
+                & .locmargin{
+                    margin-bottom: 12px;
+                    & .locimg{
+                        & img{
+                        width: 15px;
+                        height: 21px;
+                        }
+                    }
+                    & .loctxt{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $black;
+                        margin-left: 9px;
+                    }
+                }
+                & .liter{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: $black;
+                    margin-bottom: 20px;
+                }
+                & .rupee{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: $black;
+                    margin-bottom: 20px;
+                }
+                & .box{
+                    display: inline-flex;
+                    & img{
+                        width: 16px;
+                        height: 16px;
+                    }
+                    & .boxtxt{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 15px;
+                        margin-left: 2px;
+                    }
+                }
+                & .boxtxt1{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+            }
+        }
+    }
+
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name= nearbypump] {
+
+    @include media-breakpoint(basic) {
+        &.paddingclass{
+            padding: 0 18px;
+            & .parent{
+                & .map{
+                    z-index: 0;
+                }
+                background-image: linear-gradient(to bottom, $theme1, $white);
+                &::before{
+                    content: "";
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                    border-color: $black;
+                    border: 2px solid;
+                    position: absolute;
+                    top: 92px;
+                    left: 18px;
+                    z-index: 1;
+                }
+                &::after{
+                    content: "";
+                    height: 48px;
+                    border: 1px dashed $white;
+                    position: absolute;
+                    top: 108px;
+                    left: 25px;
+                }
+                & .locationinp{
+                    height: 45px;
+                    width: 297px;
+                    background-color: $white;
+                    border-radius: 2px;
+                    border: none !important;
+                    margin-top: 20px !important;
+                    padding: 0 18px;
+                    margin: 0 18px;
+                    position: relative;
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+                & .locationinpp1{
+                    
+                    &::before{
+                        content: "";
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 50%;
+                        border-color: $red;
+                        background-color: $red;
+                        // border: 2px solid;
+                        position: absolute;
+                        top: 34px;
+                        left: 30px;
+                    }
+                    & .locationinpp{
+                        height: 45px;
+                        width: 297px;
+                        background-color: $white;
+                        border-radius: 2px;
+                        border: none !important;
+                        margin-top: 20px !important;
+                        padding: 0 18px;
+                        margin: 0 18px;
+                        position: relative;
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+            }
+            
+        }
+    }
+
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name= customeraddone] {
+
+    @include media-breakpoint(basic) {
+        & .mainInner{
+            & .headerr{
+                & .headerbackground{
+                    background-color: $theme1;
+                    width: 100%;
+                    height: 60px;
+                    margin-bottom: 29px;
+                    & .leftimgcontainer{
+                        padding: 16px 14px;
+                        & img{
+                        width: 24px;
+                        height: 24px;
+                        }
+                    }
+                    & .headertxt{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 23px;
+                        padding: 16px 14px;
+                        text-align: center;
+                        padding-left: 91px;
+                    }
+                }
+            }
+            & .paddingclass{
+                padding: 0 18px;
+                & .subheading{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: lighten($color: $black, $amount: 0.1);
+                    padding-bottom: 14px;
+                    margin-top: 20px;
+                }
+                & .radios{
+                    margin-bottom:30px;
+                    overflow-x: auto;
+                    // overflow: hidden;
+                    width: 100%;
+                    &::-webkit-scrollbar{
+                        display: none;
+                    }
+                    & .roundlabel {
+                        height: 14px;
+                        width: 14px;
+                        border-radius: 50%;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid $theme3;
+                        & span {
+                            height: 6px;
+                            width: 6px;
+                            border-radius: 50%;
+                            display: inline-flex;
+                        }
+                    }
+                    & .radioinp{
+                        width: 14px !important;
+                        height: 14px !important;
+                        border-radius: 50%;
+                        accent-color: $theme1;
+                        margin-bottom: 26px;
+                        &:checked ~ .roundlabel{
+                            border-color: $theme1;
+                            & span{
+                                background-color: $theme1;
+                            }
+                        }
+                    }
+                    & .radiolbl{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        margin-left: 5px;
+                        // margin-right: 25px;
+                    }
+                }
+                & .inpmargin{
+                    margin-bottom: 25px;
+                    & .inpclasss{
+                        box-shadow: none !important;
+                        height: 46px !important;
+                        &::placeholder{
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: $black;
+                        }
+                    }
+                }
+                & .selectdate{
+                    margin-top: 6px;
+                    margin-bottom: 20px;
+                    & .dateclass{
+                        width: 100%;
+                        height: 46px;
+                        border: 1px solid $theme1;
+                        border-color: $theme1;
+                        padding: 6px 14px 6px 14px;
+                        border-radius: 2px;
+                        background-color: lighten($color: $theme1, $amount: 45);
+                        display: flex;
+                        align-items: center;
+                        & .calendertxt{
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            padding: 6px 0;
+                        }
+                        & .calenderimg{
+                                margin-right: 17px;
+                                padding: 6px 0;
+                            & img{
+                                width: 22px;
+                                height: 22px;
+                                // margin-left: 14px;
+                                // margin-top: 12px;
+                            }
+                        }
+                    }
+                }
+                & .carmarrgin{
+                    margin-bottom: 20px;
+                    & img{
+                        width: 64px;
+                        height: 64px;
+                    }
+                    & .txt{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: $black;
+                    }
+                }
+                & .bottombtn{
+                    margin-bottom: 28px;
+                }
+            }
+        }
+    }
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name= customeradd] {
+
+    @include media-breakpoint(basic) {
+        & .mainInner{
+            & .headerr{
+                & .headerbackground{
+                    background-color: $theme1;
+                    width: 100%;
+                    height: 60px;
+                    margin-bottom: 29px;
+                    & .leftimgcontainer{
+                        padding: 16px 14px;
+                        & img{
+                        width: 24px;
+                        height: 24px;
+                        }
+                    }
+                    & .headertxt{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 23px;
+                        padding: 16px 14px;
+                        text-align: center;
+                        padding-left: 91px;
+                    }
+                }
+            }
+            & .paddingclass{
+                padding: 0 18px;
+                & .subheading{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: lighten($color: $black, $amount: 0.1);
+                    padding-bottom: 14px;
+                    margin-top: 20px;
+                }
+                & .radios{
+                    margin-bottom:30px;
+                    overflow-x: auto;
+                    // overflow: hidden;
+                    width: 100%;
+                    &::-webkit-scrollbar{
+                        display: none;
+                    }
+                    & .roundlabel {
+                        height: 14px;
+                        width: 14px;
+                        border-radius: 50%;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid $theme3;
+                        & span {
+                            height: 6px;
+                            width: 6px;
+                            border-radius: 50%;
+                            display: inline-flex;
+                        }
+                    }
+                    & .radioinp{
+                        width: 14px !important;
+                        height: 14px !important;
+                        border-radius: 50%;
+                        accent-color: $theme1;
+                        margin-bottom: 26px;
+                        &:checked ~ .roundlabel{
+                            border-color: $theme1;
+                            & span{
+                                background-color: $theme1;
+                            }
+                        }
+                    }
+                    & .radiolbl{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        margin-left: 5px;
+                        // margin-right: 25px;
+                    }
+                }
+                & .inpmargin{
+                    margin-bottom: 25px;
+                    & .inpclasss{
+                        box-shadow: none !important;
+                        height: 46px !important;
+                        &::placeholder{
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: $black;
+                        }
+                    }
+                }
+                & .selectdate{
+                    margin-top: 6px;
+                    margin-bottom: 20px;
+                    & .dateclass{
+                        width: 100%;
+                        height: 46px;
+                        border: 1px solid $theme1;
+                        border-color: $theme1;
+                        padding: 6px 14px 6px 14px;
+                        border-radius: 2px;
+                        background-color: lighten($color: $theme1, $amount: 45);
+                        display: flex;
+                        align-items: center;
+                        & .calendertxt{
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            padding: 6px 0;
+                        }
+                        & .calenderimg{
+                                margin-right: 17px;
+                                padding: 6px 0;
+                            & img{
+                                width: 22px;
+                                height: 22px;
+                                // margin-left: 14px;
+                                // margin-top: 12px;
+                            }
+                        }
+                    }
+                }
+                & .carmarrgin{
+                    margin-bottom: 8px;
+                    & img{
+                        width: 64px;
+                        height: 64px;
+                    }
+                    & .txt{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: $black;
+                    }
+                }
+                & .amounttxt{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    display: inline-block;
+                    // text-align: center;
+                }
+                & .pricetxt{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    & img{
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+                & .lastttt{
+                    margin-bottom: 32px;
+                }
+                & .bottombtn{
+                    margin-bottom: 28px;
+                }
+            }
+
+        }
+        .modalone{
+            & .modaldialog{
+                & .modalcontent{
+                    & .modalheader{
+
+                    }
+                    & .modalbody{
+                        padding-top: 0;
+                        & .head{
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 23px;
+                            color: $black;
+                            margin-bottom: 1px !important;
+                            // margin-top: 34px;
+                        }
+                        & .para{
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: $black;
+                            margin-bottom: 34px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name= addrefuelling] {
+
+    @include media-breakpoint(basic) {
+        & .mainInner{
+            & .headerr{
+                & .headerbackground{
+                    background-color: $theme1;
+                    width: 100%;
+                    height: 60px;
+                    margin-bottom: 29px;
+                    & .leftimgcontainer{
+                        padding: 16px 14px;
+                        & img{
+                        width: 24px;
+                        height: 24px;
+                        }
+                    }
+                    & .headertxt{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 23px;
+                        padding: 16px 14px;
+                        text-align: center;
+                        padding-left: 91px;
+                    }
+                }
+            }
+            & .paddingclass{
+                padding: 0 18px;
+                & .btnmarginbottom{
+                    margin-bottom: 24px;
+                    margin-top: 28px;
+                    & .bookingclass{
+                        background-color: $theme1;
+                        width: 100%;
+                        height: 45px;
+                        border-radius: 2px;
+                        border: none;
+                        padding-right: 26px;
+                        & span{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 45px;
+                            width: 100%;
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 20px;
+                        }
+                    }
+                    & .enquiryclass{
+                        background-color: $theme1;
+                        background-color: lighten($color: $theme1, $amount: 45);
+                        width: 100%;
+                        height: 45px;
+                        border-radius: 2px;
+                        border: none;
+                        border:1px solid lighten($color: $theme1, $amount: 30); ;
+                    }
+                }
+                & .subheading{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: lighten($color: $black, $amount: 0.1);
+                    padding-bottom: 14px;
+                }
+                & .radios{
+                    margin-bottom:23px;
+                    overflow-x: auto;
+                    // overflow: hidden;
+                    width: 100%;
+                    &::-webkit-scrollbar{
+                        display: none;
+                    }
+                    & .roundlabel {
+                        height: 14px;
+                        width: 14px;
+                        border-radius: 50%;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid $theme3;
+                        & span {
+                            height: 6px;
+                            width: 6px;
+                            border-radius: 50%;
+                            display: inline-flex;
+                        }
+                    }
+                    & .radioinp{
+                        width: 14px !important;
+                        height: 14px !important;
+                        border-radius: 50%;
+                        accent-color: $theme1;
+                        margin-bottom: 26px;
+                        &:checked ~ .roundlabel{
+                            border-color: $theme1;
+                            & span{
+                                background-color: $theme1;
+                            }
+                        }
+                    }
+                    & .radiolbl{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        margin-left: 5px;
+                        // margin-right: 25px;
+                    }
+                }
+                & .inpmargin{
+                    margin-bottom: 25px;
+                    & .inpclasss{
+                        box-shadow: none !important;
+                        height: 46px !important;
+                        &::placeholder{
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: $black;
+                        }
+                    }
+                }
+                & .selectdate{
+                    margin-top: 6px;
+                    margin-bottom: 33px;
+                    & .dateclass{
+                        width: 100%;
+                        height: 46px;
+                        border: 1px solid $theme1;
+                        border-color: $theme1;
+                        padding: 6px 14px 6px 14px;
+                        border-radius: 2px;
+                        background-color: lighten($color: $theme1, $amount: 45);
+                        display: flex;
+                        align-items: center;
+                        & .calendertxt{
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            padding: 6px 0;
+                        }
+                        & .calenderimg{
+                                margin-right: 17px;
+                                padding: 6px 0;
+                            & img{
+                                width: 22px;
+                                height: 22px;
+                                // margin-left: 14px;
+                                // margin-top: 12px;
+                            }
+                        }
+                    }
+                }
+                & .tiprow{
+                    margin-bottom: 28px;
+                    & .tripnoteanchorcontainer{
+                        width: 100%;
+                        height: 46px;
+                        border-radius: 2px;
+                        border: 1px solid;
+                        border-color: $theme1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        & .tripnoteanchor{
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: $theme3;
+                        }
+                    }
+                }
+                & .paymentblog{
+                    margin-bottom: 17px;
+                }
+                & .selectbox{
+                    margin-bottom: 34px;
+                }
+                & .bottombtn{
+                    margin-bottom: 28px;
+                }
+                & .lbll{
+                    width: 48px;
+                    height: 46px;
+                    border-radius: 2px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: lighten($color: $theme1, $amount: 45);
+                }
+                & .txtarea{
+                    width: 100%;
+                    height: 81px;
+                    border: 1px solid $theme1;
+                    border-radius: 2px;
+                    margin-bottom: 40px;
+                    padding: 10px 10px;
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: $gray-300;
+                }
+            }
+        }
+    }
+     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include media-breakpoint-up(sm) {}
+
+        @include media-breakpoint-up(md) {}
+    
+        @include media-breakpoint-up(lg) {}
+    
+        @include media-breakpoint-up(xl) {}
+    
+        @include media-breakpoint-up(xxl) {}
+    
+    
+        @include media-breakpoint-down(xxl) {}
+    
+        @include media-breakpoint-down(xl) {}
+    
+        @include media-breakpoint-down(lg) {}
+    
+        @include media-breakpoint-down(md) {}
+    
+        @include media-breakpoint-down(sm) {}
+}
+[data-page-name= mynetwork] {
+
+    @include media-breakpoint(basic) {
+        & .navtabsul{
+            background-color: $theme1;
+            height: 40px;
+            width: 100%;
+            & .navitems{
+                width: 50%;
+                & .navlink{
+                    background-color: $theme1;
+                        color: $black;
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 17px;
+                        line-height: 21px;
+                        border:none !important;
+                        width: 100%;
+                    &.active{
+                        background-color: $theme1;
+                        color: $black;
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 17px;
+                        line-height: 21px;
+                        border:none !important;
+                        border-bottom: 3px solid $black !important;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        & .tabcontent{
+            & .tabdata{
+                padding: 0 18px;
+                & .tab1{
+                    &.tab2{
+                        margin-top: 52px !important;
+                    }
+                    margin-top: 32px;
+                    background-color: lighten($color: $theme1, $amount: 45);
+                    width: 100%;
+                    border-radius: 2px;
+                    padding: 16px 16px;
+                    & .holder{
+                        display: flex;
+                        justify-content: end;
+                        margin-bottom: 9px;
+                        & img{
+                            width: 36px;
+                            height: 16px;
+                        }
+                    }
+                    & .txt{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $black;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+            & .tabdata1{
+                & .bg{
+                    background-color: lighten($color: $theme1, $amount: 45);
+                    margin-top: 44px !important;
+                    margin: 0 18px;
+                    & .paddingclass{
+                        padding: 20px 10px;
+                        & .status{
+                            color: $red;
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 18px;
+                            display: flex;
+                            justify-content: end;
+                            margin-bottom: 5px;
+                        }
+                        & .user{
+                            width: 49px;
+                            height: 49px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                            background-color: $gray-500;
+                            & img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        & .username{
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 23px;
+                            color: $black;
+                        }
+                        & .application{
+                            font-family: 'Outfit';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: $black;
+                            & span{
+                                height: 1px;
+                                width: 50px;
+                                background-color: $black;
+                                display: inline-flex;
+                                margin: 0px 5px;
+                            }
+                            & .link{
+                                color: $blue;
+                                font-family: 'Outfit';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 20px;
+                                margin-top: 20px;
+                                margin-bottom: 20px;
+                                display: block;
+                            }
+                            & .last{
+                                font-family: 'Outfit';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 20px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .modalone{
+            & .modaldialog{
+                & .modalcontent{
+                    & .modalheader{
+                        & .aa{
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                        }
+                    }
+                    & .modalbody{
+                        display: flex;
+                        & .whatsapp{
+                            width: 36px;
+                            height: 36px;
+                            border-radius: 2px;
+                            background-color: $green;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-right: 15px;
+                            & img{
+                                width: 24px;
+                                height: 24px;
+                            }
+                        }
+                        & .msg{
+                            width: 36px;
+                            height: 36px;
+                            border-radius: 2px;
+                            background-color: $blue;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            & img{
+                                width: 24px;
+                                height: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
      // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
         @include media-breakpoint-up(sm) {}
 
