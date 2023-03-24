@@ -90,6 +90,7 @@
                     border: 1px solid;
                     border-radius: 2px;
                     margin-bottom: 32px !important;
+                    pointer-events: auto;
                     &.active{
                         background-color: $theme1;
                     }
@@ -210,6 +211,7 @@
                     display: block;
                     border: 1px solid;
                     border-radius: 2px;
+                    pointer-events: auto;
                     &.active{
                         background-color: $theme1;
                     }
@@ -1220,11 +1222,12 @@
                     margin-bottom: 24px;
                     margin-top: 34px;
                     & .bookingclass{
-                        background-color: $theme1;
+                        background-color: lighten($color: $theme1, $amount: 45);
+                        // background-color: $theme1;
                         width: 100%;
                         height: 45px;
                         border-radius: 2px;
-                        border: none;
+                        border: 1px solid $theme1;
                         padding-right: 26px;
                         & span{
                             display: flex;
@@ -1241,7 +1244,6 @@
                     }
                     & .enquiryclass{
                         background-color: $theme1;
-                        background-color: lighten($color: $theme1, $amount: 45);
                         width: 100%;
                         height: 45px;
                         border-radius: 2px;
@@ -3336,6 +3338,7 @@
                             font-weight: 400;
                             font-size: 16px;
                             line-height: 20px;
+                            pointer-events: auto;
                             &.active{
                                 background-color: lighten($color: $theme1, $amount: 45);
                                 width: 100%;
@@ -4686,7 +4689,7 @@
                             // margin-bottom: 24px;
                         }
                         & .selectclass{
-                            color: $black !important;
+                            color: $gray-500!important;
                             font-family: 'Outfit';
                             font-style: normal;
                             font-weight: 400;
@@ -4919,91 +4922,101 @@
                     margin-top: 1px;
                 }
             }
-            & .boxbg{
-                background-color: lighten($color: $theme1, $amount: 45);
-                padding: 9px 10px 10px 9px;
-                margin-left: 20px;
-                margin-right: 19px;
-                margin-bottom: 26px;
-                
-                & .boxmainhead{
-                    font-family: 'Outfit';
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 20px;
-                    color: $green;
-                    margin-bottom: 10px;
-                    position: relative;
-                    &::before{
-                        content: '';
-                        content: "";
-                        border: 1px dashed $theme1;
-                        position: absolute;
-                        height: 235px;
-                        margin-left: -28px;
-                        margin-top: -38px;
-                    }
-                }
-                & .locmargin{
-                    margin-bottom: 12px;
-                    & .locimg{
-                        & img{
-                        width: 15px;
-                        height: 21px;
+            & .lastchild{
+                & .aa{
+                    &:last-child{
+                        &::before{
+                            // display: none !important;
                         }
                     }
-                    & .loctxt{
+                }
+                & .boxbg{
+                    background-color: lighten($color: $theme1, $amount: 45);
+                    padding: 9px 10px 10px 9px;
+                    margin-left: 20px;
+                    margin-right: 19px;
+                    margin-bottom: 26px;
+                    
+                    & .boxmainhead{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $green;
+                        margin-bottom: 10px;
+                        position: relative;
+                        &::before{
+                            content: '';
+                            content: "";
+                            border: 1px dashed $theme1;
+                            position: absolute;
+                            height: 202px;
+                            margin-left: -28px;
+                            margin-top: -38px;
+                        }
+                    }
+                    & .locmargin{
+                        margin-bottom: 12px;
+                        & .locimg{
+                            & img{
+                            width: 15px;
+                            height: 21px;
+                            }
+                        }
+                        & .loctxt{
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: $black;
+                            margin-left: 9px;
+                        }
+                    }
+                    & .liter{
                         font-family: 'Outfit';
                         font-style: normal;
                         font-weight: 400;
-                        font-size: 16px;
-                        line-height: 20px;
+                        font-size: 14px;
+                        line-height: 18px;
                         color: $black;
-                        margin-left: 9px;
+                        margin-bottom: 20px;
                     }
-                }
-                & .liter{
-                    font-family: 'Outfit';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 18px;
-                    color: $black;
-                    margin-bottom: 20px;
-                }
-                & .rupee{
-                    font-family: 'Outfit';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 18px;
-                    color: $black;
-                    margin-bottom: 20px;
-                }
-                & .box{
-                    display: inline-flex;
-                    & img{
-                        width: 16px;
-                        height: 16px;
+                    & .rupee{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: $black;
+                        margin-bottom: 20px;
                     }
-                    & .boxtxt{
+                    & .box{
+                        display: inline-flex;
+                        & img{
+                            width: 16px;
+                            height: 16px;
+                        }
+                        & .boxtxt{
+                            font-family: 'Outfit';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            margin-left: 2px;
+                        }
+                    }
+                    & .boxtxt1{
                         font-family: 'Outfit';
                         font-style: normal;
                         font-weight: 400;
                         font-size: 12px;
                         line-height: 15px;
-                        margin-left: 2px;
                     }
                 }
-                & .boxtxt1{
-                    font-family: 'Outfit';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 12px;
-                    line-height: 15px;
-                }
             }
+            
         }
     }
 
@@ -5034,11 +5047,13 @@
     @include media-breakpoint(basic) {
         &.paddingclass{
             padding: 0 18px;
+            background: url(../svg/icons/mapppp.svg) ;
             & .parent{
                 & .map{
                     z-index: 0;
                 }
-                background-image: linear-gradient(to bottom, $theme1, $white);
+                background-image: linear-gradient(to bottom, $theme1 1%, transparent 49%, transparent 50%);
+                height: 100%;
                 &::before{
                     content: "";
                     width: 16px;
@@ -5061,7 +5076,8 @@
                 }
                 & .locationinp{
                     height: 45px;
-                    width: 297px;
+                    width: 100%;
+                    margin-left: 50px !important;  
                     background-color: $white;
                     border-radius: 2px;
                     border: none !important;
@@ -5091,7 +5107,8 @@
                     }
                     & .locationinpp{
                         height: 45px;
-                        width: 297px;
+                        width: 100%;
+                        margin-left: 50px !important;
                         background-color: $white;
                         border-radius: 2px;
                         border: none !important;
@@ -5104,6 +5121,74 @@
                         font-weight: 400;
                         font-size: 14px;
                         line-height: 18px;
+                    }
+                }
+                & .loc{
+                    position: absolute;
+                    top: -50%;
+                    right: 10%;
+                    display: flex;
+                    flex-direction: column;
+                    & img{
+                        width: 21px;
+                        height: 29px;
+                        margin-left: 70px;
+                        margin-bottom: 3px;
+                    }
+                    & .txt{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 13px;
+                        line-height: 16px;
+                    }
+                }
+                & .txt{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 16px;
+                    margin-left: 20px;
+                }
+                & .loc1{
+                    position: absolute;
+                    top: 13%;
+                    right: 24%;
+                    display: flex;
+                    flex-direction: column;
+                    & img{
+                        width: 21px;
+                        height: 29px;
+                        margin-left: 70px;
+                        margin-bottom: 3px;
+                    }
+                    & .txt{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 13px;
+                        line-height: 16px;
+                    }
+                }
+                & .loc2{
+                    position: absolute;
+                    top: 50%;
+                    left: 10%;
+                    display: flex;
+                    flex-direction: column;
+                    & img{
+                        width: 21px;
+                        height: 29px;
+                        margin-left: 70px;
+                        margin-bottom: 3px;
+                    }
+                    & .txt{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 13px;
+                        line-height: 16px;
                     }
                 }
             }
