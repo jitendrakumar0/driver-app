@@ -18,6 +18,7 @@
                         }
                     }
                     & .modalbody{
+                        padding-top: 0px !important;
                         & .head{
                             font-family: 'Outfit';
                             font-style: normal;
@@ -36,6 +37,25 @@
                             line-height: 20px;
                             text-align: center;
                             color: $theme3;
+                        }
+                        & .whatsapp {
+                            width: 36px;
+                            height: 36px;
+                            border-radius: 2px;
+                            background-color: $green;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-right: 15px;
+                        }
+                        & .msg {
+                            width: 36px;
+                            height: 36px;
+                            border-radius: 2px;
+                            background-color: $blue;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
                         }
                     }
                 }  

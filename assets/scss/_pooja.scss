@@ -1,49 +1,60 @@
+.fullBg {
+    height: 100vh !important;
+  background: linear-gradient(
+    to top,
+    $black 0%,
+    $black 50%,
+    $theme1 50%,
+    $theme1 100%);
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
 // ? @@@@@@@@@@@@@@@@@@@@@@[  Onboarding start  ]@@@@@@@@@@@@@@@@@@@@@@
 [data-page-name=onboarding] {
     @include media-breakpoint(basic) {
         & .pagePadding {
             padding: 0px 13px;
-            & .onboardingcarousel {
-                & .item {
-
-                    & .onboarding {
-                        & .onboardingImg {
-                            width: 335px;
-                            height: 243px;
-                            margin: auto;
-                            & img {
-                                aspect-ratio: 10/10;
-                                object-fit: contain;
-                            }
-                        }
-                        & .onboardingTextPara {
-                            padding-top: 46px;
-                            padding-bottom: 59px;
-                            font-family: 'Outfit';
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 18px;
-                            line-height: 23px;
-                            text-align: center;
-                            color: lighten($black, 7.5);
-                        }
+            & .onboarding {
+                & .onboardingImg {
+                    width: 335px;
+                    height: 243px;
+                    margin: auto;
+                    & img {
+                        aspect-ratio: 10/10;
+                        object-fit: contain;
                     }
                 }
-                & .owl-nav {
-                    display: none;
-                }
-                & .owl-dots {
-                    display: block !important;
+                & .onboardingTextPara {
+                    padding-top: 46px;
+                    padding-bottom: 59px;
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 23px;
                     text-align: center;
+                    color: lighten($black, 7.5);
+                }
+            }
+            & .onboardingNav {
+                & .onboardingNavList {
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
                     justify-content: center;
-                    & .owl-dot {
-                        background-color: $gray-300;
+                    & .onboardingListItem {
+                        list-style: none;
+                        margin-right: 13px;
                         width: 41px;
-                        height: 5px;    
+                        height: 5px;
+                        left: 106px;
+                        top: 526px;
+                        background: $gray-400;
                         border-radius: 4px;
-                        margin-left: 13px;
                         &.active {
-                            background-color: $theme1;
+                            background: $theme1;
                         }
                         &:last-child {
                             margin-right: 0px;
@@ -244,6 +255,7 @@
                     padding-top: 25px;
                     padding-bottom: 38px;
                     & .BookingItemHeading {
+                        font-family: 'Outfit';
                         font-style: normal;
                         font-weight: 600;
                         font-size: 18px;
@@ -252,6 +264,7 @@
                         color: lighten($color: $black, $amount: 0.1);
                     }   
                     & .bookingItems {
+                        font-family: 'Outfit';
                         border: 1px solid lighten($theme1, 30);
                         border-radius: 2px;
                         background-color: lighten($color: $theme1, $amount: 45);
@@ -276,16 +289,20 @@
                 & .bookingItemsdetailsNew {
                     background-color: lighten($color: $theme2, $amount: 45);
                     padding: 20px;
-                    border-radius: 2px;
+                        font-family: 'Outfit';
+                        border-radius: 2px;
                     & .timeSchedule {
                         & .timeScheduletext {
+                        font-family: 'Outfit';
                             font-style: normal;
                             font-weight: 400;
                             font-size: 12px;
                             line-height: 15px;
                             color: lighten($color: $black, $amount: 0.7);
+
                         }
                         & .timescheduleType {
+                        font-family: 'Outfit';
                             padding-left: 24px;
                             font-style: normal;
                             font-weight: 500;
@@ -332,6 +349,7 @@
                                 z-index: 2;
                             }
                             & .stepText {
+                                font-family: outfit;
                                 width: 100%;
                                 font-size: 14px;
                                 font-weight: 400;
@@ -341,6 +359,7 @@
                         }
                     }
                     & .tripDetails {
+                        font-family: outfit;
                         padding-top: 17px;
                         padding-bottom: 22px;
                         & .tripHeading {
@@ -367,6 +386,7 @@
                     border-radius: 2px;
                     & .timeSchedule {
                         & .timeScheduletext {
+                        font-family: 'Outfit';
                             font-style: normal;
                             font-weight: 400;
                             font-size: 12px;
@@ -374,6 +394,7 @@
                             color: lighten($color: $black, $amount: 0.7);
                         }
                         & .timescheduleType {
+                        font-family: 'Outfit';
                             padding-left: 24px;
                             font-style: normal;
                             font-weight: 500;
@@ -420,6 +441,7 @@
                                 z-index: 2;
                             }
                             & .stepText {
+                                font-family: outfit;
                                 width: 100%;
                                 font-size: 14px;
                                 font-weight: 400;
@@ -429,6 +451,7 @@
                         }
                     }
                     & .tripDetails {
+                        font-family: outfit;
                         padding-top: 17px;
                         padding-bottom: 22px;
                         & .tripHeading {
@@ -456,6 +479,7 @@
                     border-radius: 2px;
                     & .timeSchedule {
                         & .timeScheduletext {
+                        font-family: 'Outfit';
                             font-style: normal;
                             font-weight: 400;
                             font-size: 12px;
@@ -463,6 +487,7 @@
                             color: lighten($color: $black, $amount: 0.7);
                         }
                         & .timescheduleType {
+                        font-family: 'Outfit';
                             padding-left: 24px;
                             font-style: normal;
                             font-weight: 500;
@@ -509,6 +534,7 @@
                                 z-index: 2;
                             }
                             & .stepText {
+                                font-family: outfit;
                                 width: 100%;
                                 font-size: 14px;
                                 font-weight: 400;
@@ -530,6 +556,7 @@
                         }
                     }
                     & .tripDetails {
+                        font-family: outfit;
                         padding-top: 17px;
                         padding-bottom: 22px;
                         & .tripHeading {
@@ -618,6 +645,7 @@
                     padding-top: 25px;
                     padding-bottom: 38px;
                     & .BookingItemHeading {
+                        font-family: 'Outfit';
                         font-style: normal;
                         font-weight: 600;
                         font-size: 18px;
@@ -626,6 +654,7 @@
                         color: lighten($color: $black, $amount: 0.1);
                     }   
                     & .bookingItems {
+                        font-family: 'Outfit';
                         border: 1px solid lighten($theme1, 30);
                         border-radius: 2px;
                         background-color: lighten($color: $theme1, $amount: 45);
@@ -653,6 +682,7 @@
                     border-radius: 2px;
                     & .timeSchedule {
                         & .timeScheduletext {
+                        font-family: 'Outfit';
                             font-style: normal;
                             font-weight: 400;
                             font-size: 12px;
@@ -660,6 +690,7 @@
                             color: lighten($color: $black, $amount: 0.7);
                         }
                         & .timescheduleType {
+                        font-family: 'Outfit';
                             padding-left: 24px;
                             font-style: normal;
                             font-weight: 500;
@@ -706,6 +737,7 @@
                                 z-index: 2;
                             }
                             & .stepText {
+                                font-family: outfit;
                                 width: 100%;
                                 font-size: 14px;
                                 font-weight: 400;
@@ -715,6 +747,7 @@
                         }
                     }
                     & .tripDetails {
+                        font-family: outfit;
                         padding-top: 17px;
                         padding-bottom: 22px;
                         & .tripHeading {
@@ -741,6 +774,7 @@
                     border-radius: 2px;
                     & .timeSchedule {
                         & .timeScheduletext {
+                        font-family: 'Outfit';
                             font-style: normal;
                             font-weight: 400;
                             font-size: 12px;
@@ -748,6 +782,7 @@
                             color: lighten($color: $black, $amount: 0.7);
                         }
                         & .timescheduleType {
+                        font-family: 'Outfit';
                             padding-left: 24px;
                             font-style: normal;
                             font-weight: 500;
@@ -794,6 +829,7 @@
                                 z-index: 2;
                             }
                             & .stepText {
+                                font-family: outfit;
                                 width: 100%;
                                 font-size: 14px;
                                 font-weight: 400;
@@ -803,6 +839,7 @@
                         }
                     }
                     & .tripDetails {
+                        font-family: outfit;
                         padding-top: 17px;
                         padding-bottom: 22px;
                         & .tripHeading {
@@ -830,6 +867,7 @@
                     border-radius: 2px;
                     & .timeSchedule {
                         & .timeScheduletext {
+                        font-family: 'Outfit';
                             font-style: normal;
                             font-weight: 400;
                             font-size: 12px;
@@ -837,6 +875,7 @@
                             color: lighten($color: $black, $amount: 0.7);
                         }
                         & .timescheduleType {
+                        font-family: 'Outfit';
                             padding-left: 24px;
                             font-style: normal;
                             font-weight: 500;
@@ -883,6 +922,7 @@
                                 z-index: 2;
                             }
                             & .stepText {
+                                font-family: outfit;
                                 width: 100%;
                                 font-size: 14px;
                                 font-weight: 400;
@@ -904,6 +944,7 @@
                         }
                     }
                     & .tripDetails {
+                        font-family: outfit;
                         padding-top: 17px;
                         padding-bottom: 22px;
                         & .tripHeading {
@@ -992,6 +1033,7 @@
                     padding-top: 25px;
                     padding-bottom: 38px;
                     & .BookingItemHeading {
+                        font-family: 'Outfit';
                         font-style: normal;
                         font-weight: 600;
                         font-size: 18px;
@@ -1000,6 +1042,7 @@
                         color: lighten($color: $black, $amount: 0.1);
                     }   
                     & .bookingItems {
+                        font-family: 'Outfit';
                         border: 1px solid lighten($theme1, 30);
                         border-radius: 2px;
                         background-color: lighten($color: $theme1, $amount: 45);
@@ -1027,6 +1070,7 @@
                     border-radius: 2px;
                     & .timeSchedule {
                         & .timeScheduletext {
+                        font-family: 'Outfit';
                             font-style: normal;
                             font-weight: 400;
                             font-size: 12px;
@@ -1034,6 +1078,7 @@
                             color: lighten($color: $black, $amount: 0.7);
                         }
                         & .timescheduleType {
+                        font-family: 'Outfit';
                             padding-left: 24px;
                             font-style: normal;
                             font-weight: 500;
@@ -1080,6 +1125,7 @@
                                 z-index: 2;
                             }
                             & .stepText {
+                                font-family: outfit;
                                 width: 100%;
                                 font-size: 14px;
                                 font-weight: 400;
@@ -1089,6 +1135,7 @@
                         }
                     }
                     & .tripDetails {
+                        font-family: outfit;
                         padding-top: 17px;
                         padding-bottom: 22px;
                         & .tripHeading {
@@ -1115,6 +1162,7 @@
                     border-radius: 2px;
                     & .timeSchedule {
                         & .timeScheduletext {
+                        font-family: 'Outfit';
                             font-style: normal;
                             font-weight: 400;
                             font-size: 12px;
@@ -1122,6 +1170,7 @@
                             color: lighten($color: $black, $amount: 0.7);
                         }
                         & .timescheduleType {
+                        font-family: 'Outfit';
                             padding-left: 24px;
                             font-style: normal;
                             font-weight: 500;
@@ -1168,6 +1217,7 @@
                                 z-index: 2;
                             }
                             & .stepText {
+                                font-family: outfit;
                                 width: 100%;
                                 font-size: 14px;
                                 font-weight: 400;
@@ -1177,6 +1227,7 @@
                         }
                     }
                     & .tripDetails {
+                        font-family: outfit;
                         padding-top: 17px;
                         padding-bottom: 22px;
                         & .tripHeading {
@@ -1204,6 +1255,7 @@
                     border-radius: 2px;
                     & .timeSchedule {
                         & .timeScheduletext {
+                        font-family: 'Outfit';
                             font-style: normal;
                             font-weight: 400;
                             font-size: 12px;
@@ -1211,6 +1263,7 @@
                             color: lighten($color: $black, $amount: 0.7);
                         }
                         & .timescheduleType {
+                        font-family: 'Outfit';
                             padding-left: 24px;
                             font-style: normal;
                             font-weight: 500;
@@ -1257,6 +1310,7 @@
                                 z-index: 2;
                             }
                             & .stepText {
+                                font-family: outfit;
                                 width: 100%;
                                 font-size: 14px;
                                 font-weight: 400;
@@ -1278,6 +1332,7 @@
                         }
                     }
                     & .tripDetails {
+                        font-family: outfit;
                         padding-top: 17px;
                         padding-bottom: 22px;
                         & .tripHeading {
@@ -1336,6 +1391,7 @@
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 20px;
+                font-family: outfit;
                 // text-align: center;
                 color: lighten($color: $black, $amount: 7);
             }
@@ -1385,6 +1441,7 @@
                                     line-height: 24px;
                                     padding-bottom: 9px;
                                     color: $black;
+                                    font-family: outfit;
                                 }
                                 & .accordianItemsInput {
                                     padding-bottom: 9px;
@@ -1420,6 +1477,7 @@
                     padding-top: 39px;
                     padding-bottom: 31px;
                     & .bookingItems {
+                        font-family: 'Outfit';
                         border: 1px solid lighten($theme1, 30);
                         border-radius: 2px;
                         background-color: lighten($color: $theme1, $amount: 45);
@@ -1448,6 +1506,7 @@
                     border-radius: 2px;
                     & .timeSchedule {
                         & .timeScheduletext {
+                        font-family: 'Outfit';
                             font-style: normal;
                             font-weight: 400;
                             font-size: 12px;
@@ -1455,6 +1514,7 @@
                             color: lighten($color: $black, $amount: 0.7);
                         }
                         & .timescheduleType {
+                        font-family: 'Outfit';
                             padding-left: 24px;
                             font-style: normal;
                             font-weight: 500;
@@ -1501,6 +1561,7 @@
                                 z-index: 2;
                             }
                             & .stepText {
+                                font-family: outfit;
                                 width: 100%;
                                 font-size: 14px;
                                 font-weight: 400;
@@ -1525,6 +1586,7 @@
                         }
                     }
                     & .tripDetails {
+                        font-family: outfit;
                         padding-top: 17px;
                         // padding-bottom: 22px;
                         & .tripHeading {
@@ -1583,6 +1645,7 @@
                     padding-top: 39px;
                     padding-bottom: 31px;
                     & .bookingItems {
+                        font-family: 'Outfit';
                         border: 1px solid lighten($theme1, 30);
                         border-radius: 2px;
                         background-color: lighten($color: $theme1, $amount: 45);
@@ -1611,6 +1674,7 @@
                     border-radius: 2px;
                     & .timeSchedule {
                         & .timeScheduletext {
+                        font-family: 'Outfit';
                             font-style: normal;
                             font-weight: 400;
                             font-size: 12px;
@@ -1618,6 +1682,7 @@
                             color: lighten($color: $black, $amount: 0.7);
                         }
                         & .timescheduleType {
+                        font-family: 'Outfit';
                             padding-left: 24px;
                             font-style: normal;
                             font-weight: 500;
@@ -1664,6 +1729,7 @@
                                 z-index: 2;
                             }
                             & .stepText {
+                                font-family: outfit;
                                 width: 100%;
                                 font-size: 14px;
                                 font-weight: 400;
@@ -1688,6 +1754,7 @@
                         }
                     }
                     & .tripDetails {
+                        font-family: outfit;
                         padding-top: 17px;
                         // padding-bottom: 22px;
                         & .tripHeading {
@@ -1829,6 +1896,7 @@
                                     z-index: 2;
                                 }
                                 & .stepText {
+                                    font-family: outfit;
                                     width: 100%;
                                     font-size: 12px;
                                     font-weight: 400;
