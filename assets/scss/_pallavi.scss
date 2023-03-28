@@ -193,17 +193,6 @@
                 & .inpcontainer{
                     margin-bottom: 29px;
                     & .inp{
-                        width: 100%;
-                        height: 46px;
-                        color: $gray-500;
-                        border-radius: 2px;
-                        border: 1px solid $theme1;
-                        padding-left: 20px;
-                        font-family: 'Outfit';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 14px;
-                        line-height: 18px;
                     }
                 }
                 & .selfanchor{
@@ -843,7 +832,13 @@
                     justify-content: center;
                     align-items: center;
                     height: 86px;
-                    color: $theme3;
+                    color: $black;
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+
                 }
             }
             & .shareimgcontainer{
@@ -904,6 +899,7 @@
                     justify-content: center;
                     align-items: center;
                     & .linkimgcontainer{
+                        padding-bottom: 5px;
                         & img{
                             width: 54px;
                             height: 54px;
@@ -1245,6 +1241,11 @@
                     }
                     & .enquiryclass{
                         background-color: $theme1;
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
                         width: 100%;
                         height: 45px;
                         border-radius: 2px;
@@ -1262,7 +1263,7 @@
                     padding-bottom: 14px;
                 }
                 & .radios{
-                    margin-bottom:23px;
+                    // margin-bottom:23px;
                     overflow-x: auto;
                     // overflow: hidden;
                     width: 100%;
