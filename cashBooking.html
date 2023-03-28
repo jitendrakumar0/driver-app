@@ -412,7 +412,7 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-auto">
-                                                                        <a href="#" class="shareLink">
+                                                                        <a href="#" class="shareLink" data-bs-toggle="modal" data-bs-target="#shareMoadal">
                                                                             <img src="assets/svg/icons/sharelink.svg" class="w-100 h-100 img-fluid" alt="">
                                                                         </a>
                                                                     </div>
@@ -508,6 +508,29 @@
                         </ul>
                     </div>
                 </footer>
+            </div>
+            <!--------------------------modal------------------------>
+            <div class="modal fade modalone" id="shareMoadal" tabindex="-1" aria-labelledby="shareMoadalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modaldialog">
+                <div class="modal-content modalcontent">
+                    <div class="modal-header modalheader">
+                    <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+                    <div class="aa">Share</div>
+                    <button type="button" class="btn-close btnclose" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <!-- <div class="closebtncontainer">
+                        <img src="assets/svg/icons/closebtn.svg" alt="" srcset="">
+                    </div> -->
+                    </div>
+                    <div class="modal-body modalbody d-flex">
+                        <div class="whatsapp">
+                            <img src="assets/svg/icons/whatsappicon.svg" alt="" srcset="">
+                        </div>
+                        <div class="msg">
+                            <img src="assets/svg/icons/msgicon.svg" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+                </div>
             </div>
         </main>
         <script src="assets/libs/node_modules/jquery/dist/jquery.min.js"></script>
