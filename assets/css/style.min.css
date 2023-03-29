@@ -2669,6 +2669,7 @@ body .overflow-auto-hidden {
   padding: 16px 14px;
   text-align: center;
   padding-left: 91px;
+  color: #202020;
 }
 [data-page-name=addnewtrip] .mainInner .paddingclass {
   padding: 0 18px;
@@ -2696,6 +2697,7 @@ body .overflow-auto-hidden {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  color: #202020;
 }
 [data-page-name=addnewtrip] .mainInner .paddingclass .btnmarginbottom .enquiryclass {
   background-color: #FBCA0C;
@@ -2705,6 +2707,12 @@ body .overflow-auto-hidden {
   border-radius: 2px;
   border: none;
   border: 1px solid #fdeba3;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #202020;
 }
 [data-page-name=addnewtrip] .mainInner .paddingclass .subheading {
   font-family: "Outfit";
@@ -2713,7 +2721,6 @@ body .overflow-auto-hidden {
   font-size: 16px;
   line-height: 20px;
   color: #202020;
-  padding-bottom: 14px;
 }
 [data-page-name=addnewtrip] .mainInner .paddingclass .radios {
   margin-bottom: 23px;
@@ -2744,6 +2751,7 @@ body .overflow-auto-hidden {
   border-radius: 50%;
   accent-color: #FBCA0C;
   margin-bottom: 26px;
+  color: #202020;
 }
 [data-page-name=addnewtrip] .mainInner .paddingclass .radios .radioinp:checked ~ .roundlabel {
   border-color: #FBCA0C;
@@ -2757,7 +2765,9 @@ body .overflow-auto-hidden {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  color: #202020;
   margin-left: 5px;
+  margin-right: 25px;
 }
 [data-page-name=addnewtrip] .mainInner .paddingclass .inpmargin {
   margin-bottom: 25px;
@@ -2796,6 +2806,7 @@ body .overflow-auto-hidden {
   font-size: 12px;
   line-height: 15px;
   padding: 6px 0;
+  color: #202020;
 }
 [data-page-name=addnewtrip] .mainInner .paddingclass .selectdate .dateclass .calenderimg {
   margin-right: 17px;
@@ -2827,7 +2838,7 @@ body .overflow-auto-hidden {
   color: #300046;
 }
 [data-page-name=addnewtrip] .mainInner .paddingclass .paymentblog {
-  margin-bottom: 17px;
+  margin-bottom: 12px;
 }
 [data-page-name=addnewtrip] .mainInner .paddingclass .selectbox {
   margin-bottom: 34px;
@@ -3031,6 +3042,15 @@ body .overflow-auto-hidden {
   min-width: 74px;
   color: #222222;
 }
+[data-page-name=tripsummary] .mainInner .paddingclass .box .txt11 {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+  margin-bottom: 9px;
+}
 [data-page-name=tripsummary] .mainInner .paddingclass .divider {
   width: 100%;
   border: 1px solid #FBCA0C;
@@ -3082,7 +3102,6 @@ body .overflow-auto-hidden {
   text-align: center;
   color: #202020;
   margin-top: 45px;
-  padding: 0 49px;
   margin-bottom: 40px;
 }
 [data-page-name=scanbar] .paddingclass .qrparent {
@@ -3220,25 +3239,25 @@ body .overflow-auto-hidden {
   margin-bottom: 33px;
 }
 [data-page-name=bookingrequest] .paddingclass .txtarea {
-  padding: 54px 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px dashed #FBCA0C !important;
   width: 100%;
   height: 147px;
-  text-align: center;
   background-color: #fffbee;
   font-family: "Outfit";
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 40px;
-  text-align: center;
   color: #e9ecef;
   margin-bottom: 34px;
 }
-[data-page-name=paymentdetail] .paddingclass {
+[data-page-name=paymentmethod] .paddingclass {
   padding: 0 18px;
 }
-[data-page-name=paymentdetail] .paddingclass .mainheading {
+[data-page-name=paymentmethod] .paddingclass .mainheading {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 500;
@@ -3248,7 +3267,7 @@ body .overflow-auto-hidden {
   margin-bottom: 16px;
   color: #202020;
 }
-[data-page-name=paymentdetail] .paddingclass .subheading {
+[data-page-name=paymentmethod] .paddingclass .subheading {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 400;
@@ -3258,28 +3277,28 @@ body .overflow-auto-hidden {
   color: #202020;
   margin-bottom: 38px;
 }
-[data-page-name=paymentdetail] .paddingclass .radios {
+[data-page-name=paymentmethod] .paddingclass .radios {
   margin-bottom: 23px;
   overflow-x: auto;
   margin-bottom: 21px;
   width: 100%;
 }
-[data-page-name=paymentdetail] .paddingclass .radios::-webkit-scrollbar {
+[data-page-name=paymentmethod] .paddingclass .radios::-webkit-scrollbar {
   display: none;
 }
-[data-page-name=paymentdetail] .paddingclass .radios .radio1 {
+[data-page-name=paymentmethod] .paddingclass .radios .radio1 {
   background-color: #fffbee;
   height: 51px;
   border: 1px solid #FBCA0C;
   border-radius: 2px;
 }
-[data-page-name=paymentdetail] .paddingclass .radios .radio1.rodioheight {
+[data-page-name=paymentmethod] .paddingclass .radios .radio1.rodioheight {
   height: 72px;
 }
-[data-page-name=paymentdetail] .paddingclass .radios .radio1.borderbottom {
+[data-page-name=paymentmethod] .paddingclass .radios .radio1.borderbottom {
   border-bottom: none;
 }
-[data-page-name=paymentdetail] .paddingclass .radios .radio1 .roundlabel {
+[data-page-name=paymentmethod] .paddingclass .radios .radio1 .roundlabel {
   height: 14px;
   width: 14px;
   border-radius: 50%;
@@ -3290,32 +3309,35 @@ body .overflow-auto-hidden {
   margin-left: 12px;
   margin-right: 7px;
 }
-[data-page-name=paymentdetail] .paddingclass .radios .radio1 .roundlabel span {
+[data-page-name=paymentmethod] .paddingclass .radios .radio1 .roundlabel.lbll {
+  margin-top: -20px;
+}
+[data-page-name=paymentmethod] .paddingclass .radios .radio1 .roundlabel span {
   height: 6px;
   width: 6px;
   border-radius: 50%;
   display: inline-flex;
 }
-[data-page-name=paymentdetail] .paddingclass .radios .radio1 .radioinp {
+[data-page-name=paymentmethod] .paddingclass .radios .radio1 .radioinp {
   width: 14px !important;
   height: 14px !important;
   border-radius: 50%;
   accent-color: #FBCA0C;
 }
-[data-page-name=paymentdetail] .paddingclass .radios .radio1 .radioinp:checked ~ .roundlabel {
+[data-page-name=paymentmethod] .paddingclass .radios .radio1 .radioinp:checked ~ .roundlabel {
   border-color: #FBCA0C;
 }
-[data-page-name=paymentdetail] .paddingclass .radios .radio1 .radioinp:checked ~ .roundlabel span {
+[data-page-name=paymentmethod] .paddingclass .radios .radio1 .radioinp:checked ~ .roundlabel span {
   background-color: #FBCA0C;
 }
-[data-page-name=paymentdetail] .paddingclass .radios .radio1 .radiolbl {
+[data-page-name=paymentmethod] .paddingclass .radios .radio1 .radiolbl {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
 }
-[data-page-name=paymentdetail] .paddingclass .mainheading1 {
+[data-page-name=paymentmethod] .paddingclass .mainheading1 {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 500;
@@ -3324,7 +3346,7 @@ body .overflow-auto-hidden {
   margin-bottom: 16px;
   color: #202020;
 }
-[data-page-name=paymentdetail] .paddingclass .qrbtn {
+[data-page-name=paymentmethod] .paddingclass .qrbtn {
   margin-top: 45px;
   margin-bottom: 42px;
 }
@@ -3762,6 +3784,7 @@ body .overflow-auto-hidden {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  color: #202020;
 }
 [data-page-name=mynetworkadd] .paddingclass .top .selecttxt .back {
   background-color: white;
@@ -3782,6 +3805,7 @@ body .overflow-auto-hidden {
   line-height: 20px;
   margin-top: 16px;
   margin-bottom: 10px;
+  color: #202020;
 }
 [data-page-name=mynetworkadd] .paddingclass .a1 {
   margin-top: 16px;
@@ -3797,6 +3821,7 @@ body .overflow-auto-hidden {
   line-height: 20px;
   margin-top: 22px;
   margin-bottom: 25px;
+  color: #202020;
 }
 [data-page-name=mynetworkadd] .paddingclass .clockimage {
   position: absolute;
@@ -3821,6 +3846,7 @@ body .overflow-auto-hidden {
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 24px;
+  color: #202020;
 }
 [data-page-name=mynetworkadd] .paddingclass .messagebg .message .para {
   font-family: "Outfit";
@@ -3830,6 +3856,7 @@ body .overflow-auto-hidden {
   line-height: 18px;
   color: #202020;
   margin-bottom: 22px;
+  color: #202020;
 }
 [data-page-name=mynetworkadd] .paddingclass .messagebg .message .para .line {
   border-bottom: 1px dashed;
@@ -3844,6 +3871,7 @@ body .overflow-auto-hidden {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  color: #202020;
 }
 [data-page-name=mynetworkadd] .paddingclass .messagebg .message .msganchor {
   color: blue !important;
@@ -3860,6 +3888,7 @@ body .overflow-auto-hidden {
   font-size: 14px;
   line-height: 18px;
   margin-top: 20px;
+  color: #202020;
 }
 [data-page-name=mynetworkadd] .paddingclass .endd {
   margin-bottom: 49px;
@@ -3956,6 +3985,7 @@ body .overflow-auto-hidden {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  color: #202020;
 }
 [data-page-name=mynetworkiam] .paddingclass .top .selecttxt .selectclass span {
   font-family: "Outfit";
@@ -3973,6 +4003,7 @@ body .overflow-auto-hidden {
   line-height: 20px;
   margin-top: 16px;
   margin-bottom: 10px;
+  color: #202020;
 }
 [data-page-name=mynetworkiam] .paddingclass .a1 {
   margin-top: 16px;
@@ -3988,6 +4019,7 @@ body .overflow-auto-hidden {
   line-height: 20px;
   margin-top: 22px;
   margin-bottom: 25px;
+  color: #202020;
 }
 [data-page-name=mynetworkiam] .paddingclass .clockimage {
   position: absolute;
@@ -4012,6 +4044,7 @@ body .overflow-auto-hidden {
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 24px;
+  color: #202020;
 }
 [data-page-name=mynetworkiam] .paddingclass .messagebg .message .para {
   font-family: "Outfit";
@@ -4043,6 +4076,7 @@ body .overflow-auto-hidden {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  color: #202020;
 }
 [data-page-name=mynetworkiam] .paddingclass .messagebg .message .contact {
   font-family: "Outfit";
@@ -4051,6 +4085,7 @@ body .overflow-auto-hidden {
   font-size: 14px;
   line-height: 18px;
   margin-top: 20px;
+  color: #202020;
 }
 [data-page-name=mynetworkiam] .paddingclass .endd {
   margin-bottom: 49px;
@@ -4218,6 +4253,9 @@ body .overflow-auto-hidden {
   line-height: 18px;
   color: #adb5bd;
 }
+[data-page-name=addservice] .paddingclass .txtclass:focus-visible {
+  outline: none !important;
+}
 [data-page-name=addservice] .paddingclass .lasttxt {
   font-family: "Outfit";
   font-style: normal;
@@ -4327,7 +4365,7 @@ body .overflow-auto-hidden {
   box-shadow: none !important;
   border-color: none !important;
   background-color: #fffbee;
-  border-radius: 2px !important;
+  border-radius: none !important;
   height: 46px !important;
   color: #202020;
   font-family: "Outfit";
@@ -4348,7 +4386,18 @@ body .overflow-auto-hidden {
   background-color: #fffbee;
 }
 [data-page-name=starttrippage] .paddingclass .formcheck .formcheckinp {
-  border-color: #FBCA0C;
+  border-color: #202020 !important;
+}
+[data-page-name=starttrippage] .paddingclass .formcheck .formcheckinp:checked {
+  background-color: #202020 !important;
+}
+[data-page-name=starttrippage] .paddingclass .formcheck .lbl {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #202020;
 }
 [data-page-name=starttrippage] .paddingclass .nnn {
   margin-top: 33px;
@@ -5300,6 +5349,7 @@ body .overflow-auto-hidden {
 [data-page-name=bookingend] .mainInner .last .startButton {
   height: 46px;
   background-color: #FBCA0C;
+  color: #202020;
 }
 [data-page-name=bookingend] .modalone .modaldialog .modalcontent .modalheader {
   padding: 0 !important;
@@ -5310,6 +5360,7 @@ body .overflow-auto-hidden {
   font-weight: 600;
   font-size: 18px;
   line-height: 23px;
+  color: #202020;
 }
 [data-page-name=bookingend] .modalone .modaldialog .modalcontent .modalbody .subhead {
   font-family: "Outfit";
@@ -5318,6 +5369,7 @@ body .overflow-auto-hidden {
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 27px;
+  color: #202020;
 }
 [data-page-name=bookingend] .modalone .modaldialog .modalcontent .modalbody .radios {
   margin-bottom: 23px;
@@ -5335,6 +5387,7 @@ body .overflow-auto-hidden {
   align-items: center;
   justify-content: center;
   border: 1px solid #300046;
+  color: #202020;
 }
 [data-page-name=bookingend] .modalone .modaldialog .modalcontent .modalbody .radios .roundlabel span {
   height: 6px;
@@ -5348,6 +5401,7 @@ body .overflow-auto-hidden {
   border-radius: 50%;
   accent-color: #FBCA0C;
   margin-bottom: 26px;
+  color: #202020;
 }
 [data-page-name=bookingend] .modalone .modaldialog .modalcontent .modalbody .radios .radioinp:checked ~ .roundlabel {
   border-color: #FBCA0C;
@@ -5362,6 +5416,7 @@ body .overflow-auto-hidden {
   font-size: 14px;
   line-height: 20px;
   margin-left: 5px;
+  color: #202020;
 }
 [data-page-name=bookingend] .modalone .modaldialog .modalcontent .modalbody .txt {
   margin-top: 21px;
@@ -5371,6 +5426,7 @@ body .overflow-auto-hidden {
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 18px;
+  color: #202020;
 }
 [data-page-name=bookingend] .modalone .modaldialog .modalcontent .modalbody .txtareaclass {
   width: 100%;
@@ -5384,6 +5440,11 @@ body .overflow-auto-hidden {
   font-size: 12px;
   line-height: 15px;
   margin-bottom: 41px;
+  border: 2px solid #FBCA0C;
+  background-color: #fffcf3;
+}
+[data-page-name=bookingend] .modalone .modaldialog .modalcontent .modalbody .txtareaclass:focus-visible {
+  outline: none !important;
 }
 [data-page-name=bookingend] .modalone .modaldialog .modalcontent .modalbody .red {
   width: 100%;
@@ -5465,6 +5526,7 @@ body .overflow-auto-hidden {
   align-items: center;
   margin-top: 27px;
   margin-bottom: 8px;
+  overflow: hidden;
 }
 [data-page-name=editprofile] .paddingclass .profilecontainer img {
   width: 44px;
@@ -6214,8 +6276,8 @@ body .overflow-auto-hidden {
 [data-page-name=addrefuelling] .mainInner .paddingclass .subheading {
   font-family: "Outfit";
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 15px;
   line-height: 20px;
   color: #202020;
   padding-bottom: 14px;
@@ -6263,6 +6325,7 @@ body .overflow-auto-hidden {
   font-size: 14px;
   line-height: 20px;
   margin-left: 5px;
+  color: #202020;
 }
 [data-page-name=addrefuelling] .mainInner .paddingclass .inpmargin {
   margin-bottom: 25px;
@@ -6270,12 +6333,14 @@ body .overflow-auto-hidden {
 [data-page-name=addrefuelling] .mainInner .paddingclass .inpmargin .inpclasss {
   box-shadow: none !important;
   height: 46px !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
 }
 [data-page-name=addrefuelling] .mainInner .paddingclass .inpmargin .inpclasss::placeholder {
   font-family: "Outfit";
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 400 !important;
+  font-size: 14px !important;
   line-height: 18px;
   color: #202020;
 }
@@ -6300,6 +6365,7 @@ body .overflow-auto-hidden {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
+  color: #202020;
   padding: 6px 0;
 }
 [data-page-name=addrefuelling] .mainInner .paddingclass .selectdate .dateclass .calenderimg {
@@ -6363,6 +6429,9 @@ body .overflow-auto-hidden {
   line-height: 18px;
   color: #dee2e6;
 }
+[data-page-name=addrefuelling] .mainInner .paddingclass .txtarea:focus-visible {
+  outline: none !important;
+}
 [data-page-name=mynetwork] .navtabsul {
   background-color: #FBCA0C;
   height: 40px;
@@ -6380,7 +6449,9 @@ body .overflow-auto-hidden {
   font-size: 17px;
   line-height: 21px;
   border: none !important;
-  width: 100%;
+  width: fit-content;
+  margin: auto;
+  padding: 8px 0 8px 0px;
 }
 [data-page-name=mynetwork] .navtabsul .navitems .navlink.active {
   background-color: #FBCA0C;
@@ -6392,7 +6463,9 @@ body .overflow-auto-hidden {
   line-height: 21px;
   border: none !important;
   border-bottom: 3px solid #202020 !important;
-  width: 100%;
+  width: fit-content;
+  margin: auto;
+  padding: 8px 0 8px 0px;
 }
 [data-page-name=mynetwork] .tabcontent .tabdata {
   padding: 0 18px;

@@ -24,3 +24,5 @@ Homestead.json
 # assets/css/*
 # assets/libs/node_modules/*
 .vscode
+node_modules/
+assets/css/

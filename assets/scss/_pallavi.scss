@@ -1470,6 +1470,17 @@
                         color: lighten($color: $black, $amount: 0.7);
                     }
                 }
+                & .box{
+                    & .txt11{
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: lighten($color: $black, $amount: 0.7);
+                        margin-bottom:9px;
+                    }
+                }
                 & .divider{
                     width: 100%;
                     border: 1px solid $theme1;
@@ -1787,7 +1798,7 @@
     
         @include media-breakpoint-down(sm) {}
 }
-[data-page-name= paymentdetail] {
+[data-page-name= paymentmethod] {
 
     @include media-breakpoint(basic) {
         & .paddingclass{
@@ -1842,6 +1853,9 @@
                         border: 1px solid $theme3;
                         margin-left: 12px;
                         margin-right:7px;
+                        &.lbll{
+                            margin-top: -20px;
+                        }
                         & span {
                             height: 6px;
                             width: 6px;
@@ -1883,16 +1897,6 @@
             & .qrbtn{
                 margin-top: 45px;
                 margin-bottom: 42px;
-            }
-            & .box{
-                & .txt11{
-                    font-family: 'Outfit';
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 20px;
-                    color: $black
-                }
             }
         }
     }
@@ -2476,6 +2480,7 @@
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 20px;
+                    color: $black;
                     & .back{
                         background-color: lighten($color: $theme1, $amount: 50);
                         & .selectclass{
@@ -2499,6 +2504,7 @@
                 line-height: 20px;
                 margin-top: 16px;
                 margin-bottom: 10px;
+                color: $black;
             }
             & .a1{
                 margin-top: 16px;
@@ -2514,6 +2520,7 @@
                 line-height: 20px;
                 margin-top: 22px;
                 margin-bottom: 25px;
+                color: $black;
             }
             & .clockimage{
                 position: absolute;
@@ -2537,6 +2544,7 @@
                         font-size: 14px;
                         line-height: 18px;
                         margin-bottom: 24px;
+                        color: $black;
                     }
                     & .para{
                         font-family: 'Outfit';
@@ -2546,6 +2554,7 @@
                         line-height: 18px;
                         color: $black;
                         margin-bottom: 22px;
+                        color: $black;
                         & .line{
                             border-bottom: 1px dashed;
                             width: 70px;
@@ -2561,6 +2570,7 @@
                         font-weight: 400;
                         font-size: 14px;
                         line-height: 18px;
+                        color: $black;
                     }
                     & .msganchor{
                         color: blue !important;
@@ -2569,6 +2579,7 @@
                         font-weight: 400;
                         font-size: 14px;
                         line-height: 18px;
+
                     }
                     & .contact{
                         font-family: 'Outfit';
@@ -2577,6 +2588,7 @@
                         font-size: 14px;
                         line-height: 18px;
                         margin-top: 20px;
+                        color: $black;
                     }
                 }
             }
@@ -2703,6 +2715,7 @@
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 20px;
+                    color: $black;
                     & .selectclass{
                         & span{
                             font-family: 'Outfit';
@@ -2723,6 +2736,7 @@
                 line-height: 20px;
                 margin-top: 16px;
                 margin-bottom: 10px;
+                color: $black;
             }
             & .a1{
                 margin-top: 16px;
@@ -2738,6 +2752,7 @@
                 line-height: 20px;
                 margin-top: 22px;
                 margin-bottom: 25px;
+                color: $black;
             }
             & .clockimage{
                 position: absolute;
@@ -2761,6 +2776,7 @@
                         font-size: 14px;
                         line-height: 18px;
                         margin-bottom: 24px;
+                        color: $black;
                     }
                     & .para{
                         font-family: 'Outfit';
@@ -2793,6 +2809,7 @@
                         font-weight: 400;
                         font-size: 14px;
                         line-height: 18px;
+                        color: $black;
                     }
                     & .contact{
                         font-family: 'Outfit';
@@ -2801,6 +2818,7 @@
                         font-size: 14px;
                         line-height: 18px;
                         margin-top: 20px;
+                        color: $black;
                     }
                 }
             }
@@ -3113,6 +3131,9 @@
                 font-size: 14px;
                 line-height: 18px;
                 color: $gray-500;
+                &:focus-visible{
+                    outline: none !important;
+                }
             }
             & .lasttxt{
                 font-family: 'Outfit';
@@ -3278,7 +3299,7 @@
                             box-shadow: none !important;
                             border-color: none !important;
                             background-color: lighten($color: $theme1, $amount: 45);
-                            border-radius: 2px !important;
+                            border-radius: none !important;
                             height: 46px !important;
                             color: $black;
                             font-family: 'Outfit';
@@ -3305,7 +3326,10 @@
             }
             & .formcheck{
                 & .formcheckinp{
-                    border-color: $theme1;
+                    border-color: $black !important;
+                    &:checked{
+                        background-color: $black !important ;
+                    }
                 }
                 & .lbl{
                     font-family: 'Outfit';
@@ -4636,6 +4660,11 @@
                                 font-size: 12px;
                                 line-height: 15px;
                                 margin-bottom: 41px;
+                                border: 2px solid $theme1;
+                                background-color: lighten($color: $theme1, $amount: 46);
+                                &:focus-visible{
+                                    outline: none !important;
+                                }
                             }
                             & .red{
                                 width: 100%;
@@ -4775,6 +4804,7 @@
                 align-items: center;
                 margin-top: 27px;
                 margin-bottom: 8px;
+                overflow: hidden;
                 & img{
                     width: 44px;
                     height: 44px;
@@ -5736,8 +5766,8 @@
                 & .subheading{
                     font-family: 'Outfit';
                     font-style: normal;
-                    font-weight: 500;
-                    font-size: 16px;
+                    font-weight: 400;
+                    font-size: 15px;
                     line-height: 20px;
                     color: lighten($color: $black, $amount: 0.1);
                     padding-bottom: 14px;
@@ -5785,6 +5815,7 @@
                         font-size: 14px;
                         line-height: 20px;
                         margin-left: 5px;
+                        color: $black;
                         // margin-right: 25px;
                     }
                 }
@@ -5793,11 +5824,13 @@
                     & .inpclasss{
                         box-shadow: none !important;
                         height: 46px !important;
+                        font-weight: 400 !important;
+                        font-size: 14px !important;
                         &::placeholder{
                             font-family: 'Outfit';
                             font-style: normal;
-                            font-weight: 400;
-                            font-size: 14px;
+                            font-weight: 400 !important;
+                            font-size: 14px !important;
                             line-height: 18px;
                             color: $black;
                         }
@@ -5822,6 +5855,7 @@
                             font-weight: 400;
                             font-size: 12px;
                             line-height: 15px;
+                            color: $black;
                             padding: 6px 0;
                         }
                         & .calenderimg{
@@ -5888,6 +5922,9 @@
                     font-size: 14px;
                     line-height: 18px;
                     color: $gray-300;
+                    &:focus-visible{
+                        outline: none !important;
+                    }
                 }
             }
         }
@@ -5932,7 +5969,9 @@
                         font-size: 17px;
                         line-height: 21px;
                         border:none !important;
-                        width: 100%;
+                        width: fit-content;
+                        margin: auto;
+                        padding: 8px 0 8px 0px;
                     &.active{
                         background-color: $theme1;
                         color: $black;
@@ -5943,7 +5982,9 @@
                         line-height: 21px;
                         border:none !important;
                         border-bottom: 3px solid $black !important;
-                        width: 100%;
+                        width: fit-content;
+                        margin: auto;
+                        padding: 8px 0 8px 0px;
                     }
                 }
             }
