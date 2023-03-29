@@ -63,7 +63,7 @@
                     line-height: 30px;
                     text-align: center;
                     margin-bottom: 19px;
-                    color: $theme3;
+                    color: $black;
                 }
                 & .subheading{
                     font-family: 'Outfit';
@@ -73,7 +73,7 @@
                     line-height: 20px;
                     text-align: center;     
                     margin-bottom: 55px;  
-                    color: $theme3;
+                    color: $black;
                 }
                 & .btnhead{
                     font-family: 'Outfit';
@@ -82,7 +82,7 @@
                     font-size: 20px;
                     line-height: 25px;
                     margin-bottom: 19px;
-                    color: $theme3;
+                    color: $black;
                 }
                 & .selfanchor{
                     width: 100% !important;
@@ -106,7 +106,7 @@
                         font-weight: 500;
                         font-size: 16px;
                         line-height: 20px;
-                        color: $theme3;
+                        color: $black;
                     }
                 }
                 & .bottomtxt{
@@ -117,7 +117,7 @@
                     line-height: 20px;
                     text-align: center;
                     margin-top: 37px;
-                    color: $theme3;
+                    color: $black;
                     & .signanchor{
     
                     }
@@ -168,7 +168,7 @@
                     font-weight: 600;
                     font-size: 22px;
                     line-height: 28px;
-                    color: $theme3;
+                    color: $black;
                     margin-bottom: 8px;
                     margin-top: 97px;
                 }
@@ -178,7 +178,7 @@
                     font-weight: 400;
                     font-size: 18px;
                     line-height: 23px;
-                    color: $theme3;
+                    color: $black;
                     margin-bottom: 40px;
                 }
                 & .require{
@@ -187,23 +187,12 @@
                     font-weight: 400;
                     font-size: 15px;
                     line-height: 19px;
-                    color: $theme3;
+                    color: $black;
                     margin-bottom: 11px;
                 }
                 & .inpcontainer{
                     margin-bottom: 29px;
                     & .inp{
-                        width: 100%;
-                        height: 46px;
-                        color: $gray-500;
-                        border-radius: 2px;
-                        border: 1px solid $theme1;
-                        padding-left: 20px;
-                        font-family: 'Outfit';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 14px;
-                        line-height: 18px;
                     }
                 }
                 & .selfanchor{
@@ -221,7 +210,7 @@
                         font-style: normal;
                         font-weight: 500;
                         font-size: 16px;
-                        color: $theme3;
+                        color: $black;
                         line-height: 20px;
                         display: flex;
                         justify-content: center;
@@ -276,7 +265,7 @@
                     font-size: 18px;
                     line-height: 23px;
                     text-align: center;
-                    color: $theme3;
+                    color: $black;
                     padding-left:46px ;
                     padding-right:55px ;
                     padding-bottom: 22px;
@@ -306,7 +295,7 @@
                         font-style: normal;
                         font-weight: 500;
                         font-size: 16px;
-                        color: $theme3;
+                        color: $black;
                         line-height: 20px;
                         display: flex;
                         justify-content: center;
@@ -373,7 +362,7 @@
                     line-height: 20px;
                     text-align: center;     
                     margin-bottom: 55px;  
-                    color: $theme3;
+                    color: $black;
                 }
                 & .btnhead{
                     font-family: 'Outfit';
@@ -382,7 +371,7 @@
                     font-size: 20px;
                     line-height: 25px;
                     margin-bottom: 19px;
-                    color: $theme3;
+                    color: $black;
                 }
                 & .selfanchor{
                     width: 100% !important;
@@ -405,7 +394,7 @@
                         font-weight: 500;
                         font-size: 16px;
                         line-height: 20px;
-                        color: $theme3;
+                        color: $black;
                     }
                 }
                 & .bottomtxt{
@@ -416,7 +405,7 @@
                     line-height: 20px;
                     text-align: center;
                     margin-top: 37px;
-                    color: $theme3;
+                    color: $black;
                     & .signanchor{
     
                     }
@@ -843,7 +832,13 @@
                     justify-content: center;
                     align-items: center;
                     height: 86px;
-                    color: $theme3;
+                    color: $black;
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+
                 }
             }
             & .shareimgcontainer{
@@ -904,6 +899,7 @@
                     justify-content: center;
                     align-items: center;
                     & .linkimgcontainer{
+                        padding-bottom: 5px;
                         & img{
                             width: 54px;
                             height: 54px;
@@ -1245,6 +1241,11 @@
                     }
                     & .enquiryclass{
                         background-color: $theme1;
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
                         width: 100%;
                         height: 45px;
                         border-radius: 2px;
@@ -1262,7 +1263,7 @@
                     padding-bottom: 14px;
                 }
                 & .radios{
-                    margin-bottom:23px;
+                    // margin-bottom:23px;
                     overflow-x: auto;
                     // overflow: hidden;
                     width: 100%;
