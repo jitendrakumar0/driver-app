@@ -147,9 +147,11 @@
                 // min-width: 259px;
                 width: 100%;
                 margin: auto;
+                font-family: outfit;
             }
             & .otpInput {
                 padding-top: 22px;
+                padding-bottom: 55px;
                 // max-width: 274px;
                 width: 100%;
                 margin: auto;
@@ -160,6 +162,7 @@
                     & input {
                         text-align: center;
                         width: 46px;
+                        font-size: 18px;
                     }
                 }
                 & .timeRemaining {
@@ -168,7 +171,8 @@
                         font-weight: 400;
                         font-size: 14px;
                         line-height: 18px;
-                        color: $black(lighten, 0.7);
+                        color: lighten($black, 0.7);
+                        font-family: outfit;
     
                         & span {
                             color: $theme1;
@@ -177,8 +181,9 @@
                     & .otpTimeSend {
                         font-weight: 500;
                         font-size: 14px;
-                        color: $black(lighten, 0.7);
+                        color: lighten($black, 0.7);
                         line-height: 18px;
+                        font-family: outfit;
                     }
                 }
             }
@@ -224,7 +229,7 @@
                 & .bookingHeaderItem {
                     padding: 3px 15px 3px 15px;
                     // display: flex;
-                    border-right: 1px solid lighten($color: $black, $amount:50);
+                    border-right: 2px solid lighten($color: $theme1, $amount:9);
                     // align-items: center;
                     &:last-child {
                         border-right: none ;
@@ -245,6 +250,7 @@
                         font-size: 14px;
                         line-height: 18px;
                         color: $black;
+                        font-family: outfit;
                     }
                 }
             }

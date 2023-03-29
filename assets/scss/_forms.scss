@@ -5,7 +5,8 @@
     color: lighten($black, 7.5);
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
+    font-family: outfit;
     &::placeholder {
         color: $gray-500;
         font-weight: 400;
