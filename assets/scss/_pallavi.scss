@@ -988,6 +988,7 @@
                         padding: 16px 14px;
                         text-align: center;
                         padding-left: 91px;
+                        color: $black;
                     }
                 }
             }
@@ -1014,6 +1015,7 @@
                             font-weight: 500;
                             font-size: 16px;
                             line-height: 20px;
+                            color: $black;
                         }
                     }
                     & .enquiryclass{
@@ -1024,6 +1026,12 @@
                         border-radius: 2px;
                         border: none;
                         border:1px solid lighten($color: $theme1, $amount: 30); ;
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: $black;
                     }
                 }
                 & .subheading{
@@ -1033,7 +1041,7 @@
                     font-size: 16px;
                     line-height: 20px;
                     color: lighten($color: $black, $amount: 0.1);
-                    padding-bottom: 14px;
+                    // padding-bottom: 14px;
                 }
                 & .radios{
                     margin-bottom:23px;
@@ -1064,6 +1072,7 @@
                         border-radius: 50%;
                         accent-color: $theme1;
                         margin-bottom: 26px;
+                        color: $black;
                         &:checked ~ .roundlabel{
                             border-color: $theme1;
                             & span{
@@ -1077,8 +1086,9 @@
                         font-weight: 400;
                         font-size: 14px;
                         line-height: 20px;
+                        color: $black;
                         margin-left: 5px;
-                        // margin-right: 25px;
+                        margin-right: 25px;
                     }
                 }
                 & .inpmargin{
@@ -1116,6 +1126,7 @@
                             font-size: 12px;
                             line-height: 15px;
                             padding: 6px 0;
+                            color: $black;
                         }
                         & .calenderimg{
                                 margin-right: 17px;
@@ -1151,7 +1162,7 @@
                     }
                 }
                 & .paymentblog{
-                    margin-bottom: 17px;
+                    margin-bottom: 12px;
                 }
                 & .selectbox{
                     margin-bottom: 34px;
@@ -1538,7 +1549,7 @@
                 text-align: center;
                 color: $black;
                 margin-top: 45px;
-                padding: 0 49px;
+                // padding: 0 49px;
                 margin-bottom: 40px;
             }
             & .qrparent{
@@ -1735,18 +1746,19 @@
                 margin-bottom: 33px;
             }
             & .txtarea{
-                padding: 54px 92px;
+                // padding: 54px 92px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 border: 1px dashed  $theme1!important;
                 width: 100%;
                 height: 147px;
-                text-align: center;
                 background-color: lighten($color: $theme1, $amount: 45);
                 font-family: 'Outfit';
                 font-style: normal;
                 font-weight: 600;
                 font-size: 32px;
                 line-height: 40px;
-                text-align: center;
                 color: $gray-200;
                 margin-bottom: 34px;
             }
@@ -1871,6 +1883,16 @@
             & .qrbtn{
                 margin-top: 45px;
                 margin-bottom: 42px;
+            }
+            & .box{
+                & .txt11{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: $black
+                }
             }
         }
     }
@@ -3285,6 +3307,14 @@
                 & .formcheckinp{
                     border-color: $theme1;
                 }
+                & .lbl{
+                    font-family: 'Outfit';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: $black;
+                }
             }
             .nnn{
                 margin-top: 33px;
@@ -4507,6 +4537,7 @@
                     & .startButton{
                         height: 46px;
                         background-color: $theme1;
+                        color: $black;
                     }
                 }
             }
@@ -4523,6 +4554,7 @@
                                 font-weight: 600;
                                 font-size: 18px;
                                 line-height: 23px;
+                                color: $black;
                             }
                             & .subhead{
                                 font-family: 'Outfit';
@@ -4531,6 +4563,7 @@
                                 font-size: 16px;
                                 line-height: 20px;
                                 margin-bottom: 27px;
+                                color: $black;
                             }
                             & .radios{
                                 margin-bottom:23px;
@@ -4548,6 +4581,7 @@
                                     align-items: center;
                                     justify-content: center;
                                     border: 1px solid $theme3;
+                                    color: $black;
                                     & span {
                                         height: 6px;
                                         width: 6px;
@@ -4561,6 +4595,7 @@
                                     border-radius: 50%;
                                     accent-color: $theme1;
                                     margin-bottom: 26px;
+                                    color: $black;
                                     &:checked ~ .roundlabel{
                                         border-color: $theme1;
                                         & span{
@@ -4575,6 +4610,7 @@
                                     font-size: 14px;
                                     line-height: 20px;
                                     margin-left: 5px;
+                                    color: $black;
                                     // margin-right: 25px;
                                 }
                             }
@@ -4586,6 +4622,7 @@
                                 font-size: 14px;
                                 line-height: 18px;
                                 margin-bottom: 18px;
+                                color: $black;
                             }
                             & .txtareaclass{
                                 width: 100%;
@@ -4612,7 +4649,6 @@
                                 font-size: 16px;
                                 line-height: 20px;
                                 color: $white;
-
                             }
                         }
                     }
