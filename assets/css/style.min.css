@@ -344,6 +344,7 @@ body .overflow-auto-hidden {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 2px;
 }
 .TripFile .tripLabel.dashBorder {
   border: 1px dashed #fdeba3;
@@ -1575,6 +1576,9 @@ body .overflow-auto-hidden {
   border: 0px !important;
   border-radius: 0;
   height: 46px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: outfit;
 }
 [data-page-name=endTrip] .contentBody .endTrip .tripAccordian .accordion .accordion-item .accordion-header .accordion-button:focus {
   box-shadow: none;
@@ -6682,9 +6686,6 @@ body .overflow-auto-hidden {
 .modal.modalone .modaldialog .modalcontent .modalheader .btn-close {
   --bs-btn-close-bg: url(../svg/icons/closebtn.svg) !important;
   --bs-btn-close-opacity:1;
-}
-.modal.modalone .modaldialog .modalcontent .modalbody {
-  padding-top: 0px !important;
 }
 .modal.modalone .modaldialog .modalcontent .modalbody .head {
   font-family: "Outfit";
