@@ -403,7 +403,7 @@ body .overflow-auto-hidden {
 
 .fullBg {
   height: 100vh !important;
-  background: linear-gradient(to top, #202020 0%, #202020 50%, #FBCA0C 50%, #FBCA0C 100%);
+  background: linear-gradient(to top, #322802 0%, #322802 50%, #FBCA0C 50%, #FBCA0C 100%);
   display: flex;
   justify-content: center;
   align-items: center;
