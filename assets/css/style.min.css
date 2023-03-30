@@ -1561,7 +1561,7 @@ body .overflow-auto-hidden {
   padding-bottom: 33px;
 }
 [data-page-name=endTrip] .contentBody .endTrip .tripAccordian {
-  padding-top: 35px;
+  padding: 35px 0px;
 }
 [data-page-name=endTrip] .contentBody .endTrip .tripAccordian .accordion .accordion-item {
   border: 0px !important;
