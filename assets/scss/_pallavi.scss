@@ -459,6 +459,7 @@
                         font-size: 22px;
                         line-height: 28px;
                         padding-bottom: 5px;
+                        color: $black;
                     }
                     & .subheading{
                         font-family: 'Outfit';
@@ -466,6 +467,7 @@
                         font-weight: 400;
                         font-size: 18px;
                         line-height: 23px;
+                        color: $black;
                     }
                 }
                 
@@ -479,6 +481,7 @@
                             font-weight: 400;
                             font-size: 15px;
                             line-height: 19px;
+                            color: $black;
                         }
                         & .inp{
                             box-shadow: none !important;
@@ -527,6 +530,7 @@
                             line-height: 20px;
                             margin-left: 10px;
                             margin-right: 25px;
+                            color: $black;
                         }
                     }
                     & .selfanchor{
@@ -1041,7 +1045,7 @@
                     font-size: 16px;
                     line-height: 20px;
                     color: lighten($color: $black, $amount: 0.1);
-                    // padding-bottom: 14px;
+                    padding-bottom: 14px;
                 }
                 & .radios{
                     margin-bottom:23px;
@@ -1162,7 +1166,7 @@
                     }
                 }
                 & .paymentblog{
-                    margin-bottom: 12px;
+                    // margin-bottom: 12px;
                 }
                 & .selectbox{
                     margin-bottom: 34px;
@@ -1664,6 +1668,11 @@
                 text-align: center;
                 display: block;
                 color: $black;
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
             }
         }
     }
@@ -1703,7 +1712,7 @@
                 line-height: 25px;
                 text-align: center;
                 margin-top: 37px;
-                margin-bottom: 30px;
+                margin-bottom: 5px;
                 color: $black;
             }
             & .subheading{
@@ -1729,8 +1738,8 @@
             & .txt2{
                 font-family: 'Outfit';
                 font-style: normal;
-                font-weight: 400;
-                font-size: 14px;
+                font-weight: 500;
+                font-size: 24px;
                 line-height: 18px;
                 text-align: center;
                 margin-bottom: 9px;
