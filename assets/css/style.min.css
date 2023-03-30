@@ -2285,6 +2285,7 @@ body .overflow-auto-hidden {
   font-size: 22px;
   line-height: 28px;
   padding-bottom: 5px;
+  color: #202020;
 }
 [data-page-name=Signupwithcompany] .mainInner .paddingclass .signupHeading .subheading {
   font-family: "Outfit";
@@ -2292,6 +2293,7 @@ body .overflow-auto-hidden {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  color: #202020;
 }
 [data-page-name=Signupwithcompany] .mainInner .paddingclass .myform .marginn {
   margin-bottom: 24px;
@@ -2303,6 +2305,7 @@ body .overflow-auto-hidden {
   font-weight: 400;
   font-size: 15px;
   line-height: 19px;
+  color: #202020;
 }
 [data-page-name=Signupwithcompany] .mainInner .paddingclass .myform .marginn .inp {
   box-shadow: none !important;
@@ -2347,6 +2350,7 @@ body .overflow-auto-hidden {
   line-height: 20px;
   margin-left: 10px;
   margin-right: 25px;
+  color: #202020;
 }
 [data-page-name=Signupwithcompany] .mainInner .paddingclass .myform .selfanchor {
   margin-bottom: 35px;
@@ -2721,6 +2725,7 @@ body .overflow-auto-hidden {
   font-size: 16px;
   line-height: 20px;
   color: #202020;
+  padding-bottom: 14px;
 }
 [data-page-name=addnewtrip] .mainInner .paddingclass .radios {
   margin-bottom: 23px;
@@ -2836,9 +2841,6 @@ body .overflow-auto-hidden {
   font-size: 14px;
   line-height: 18px;
   color: #300046;
-}
-[data-page-name=addnewtrip] .mainInner .paddingclass .paymentblog {
-  margin-bottom: 12px;
 }
 [data-page-name=addnewtrip] .mainInner .paddingclass .selectbox {
   margin-bottom: 34px;
@@ -3173,6 +3175,11 @@ body .overflow-auto-hidden {
   text-align: center;
   display: block;
   color: #202020;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 [data-page-name=bookingrequest] .paddingclass {
   padding: 0 18px;
@@ -3185,7 +3192,7 @@ body .overflow-auto-hidden {
   line-height: 25px;
   text-align: center;
   margin-top: 37px;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   color: #202020;
 }
 [data-page-name=bookingrequest] .paddingclass .subheading {
@@ -3211,8 +3218,8 @@ body .overflow-auto-hidden {
 [data-page-name=bookingrequest] .paddingclass .txt2 {
   font-family: "Outfit";
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 24px;
   line-height: 18px;
   text-align: center;
   margin-bottom: 9px;
